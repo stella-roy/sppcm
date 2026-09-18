@@ -1,6 +1,5 @@
 <?php
 
-
 /**
  * Charge les styles du thème parent et du thème enfant.
  */
