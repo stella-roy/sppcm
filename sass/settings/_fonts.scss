@@ -1,0 +1,12 @@
+$font: Montserrat;
+
+//***** TAILLE DES POLICES FLUIDES *****//
+$font_title: clamp(32px, 4vw + 1rem, 64px);
+$font_sub_title: clamp(24px, 2.5vw + 1rem, 32px);
+$font_nav: 24px; 
+$font_btn: clamp(16px, 1vw + 0.8rem, 18px);
+$font_text: clamp(16px, 1vw + 0.8rem, 18px);
+$font_sub_text: clamp(14px, 1vw + 0.5rem, 16px);
+
+//***** POIDS DES POLICES *****//
+$font_bold: bold;
