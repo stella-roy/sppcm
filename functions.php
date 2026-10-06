@@ -1,5 +1,6 @@
 <?php
 
+// reivax git
 
 /**
  * Charge les styles du thème parent et du thème enfant.
@@ -72,5 +73,6 @@ function underscores_child_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'underscores_child_scripts' );
 */
+
 
 ?>
