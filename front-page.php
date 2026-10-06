@@ -32,7 +32,7 @@ get_header();
     <section>Infolettre récente</section>
 
 
-</main><!-- #main -->
+</main><!-- #mai n -->
 
 <?php
 get_footer();
