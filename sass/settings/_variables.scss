@@ -21,15 +21,28 @@ $color_active: #FF6A5F;
 $dark_text: #1E1E1E;
 $light_text: #F7EBDA;
 
-//***** ESPACEMENT FLUIDE (Dynamic Spacing) *****//
-$space-section: clamp(56px, 5vw + 1rem, 88px);
-$space-gallery: clamp(24px, 4vw + 1rem, 72px);
-$space-title-bottom: clamp(16px, 2vw + 0.5rem, 24px);
+//***** FONT UTILISÉ *****//
+$font: Montserrat;
 
-//***** ESPACEMENT STATIQUE (Static Spacing) *****//
-$space-post-top: 24px;
-$space-paragraph: 16px;
-$space-icon: 16px;
+//***** TAILLE DES POLICES FLUIDES *****//
+$fs_xxl: clamp(32px, 4vw + 1rem, 64px);
+$fs_xl: clamp(24px, 2.5vw + 1rem, 32px);
+$fs_l: 24px; 
+$fs_md: clamp(16px, 1vw + 0.8rem, 18px);
+$fs_sm: clamp(16px, 1vw + 0.8rem, 18px);
+$fs_xs: clamp(14px, 1vw + 0.5rem, 16px);
+
+//***** POIDS DES POLICES *****//
+$font_bold: bold;
+
+//***** ESPACEMENT FLUIDE *****//
+$space_lg: clamp(56px, 5vw + 1rem, 88px);
+$space_md: clamp(24px, 4vw + 1rem, 72px);
+$space_sm: clamp(16px, 2vw + 0.5rem, 24px);
+
+//***** ESPACEMENT STATIQUE *****//
+$space_stat_lg: 24px;
+$space_stat_md: 16px;
 
 //***** BOX-SHADOW / INNER-SHADOW *****//
 $icn_shadow: 0px 3px 2.9px 0px rgba(0, 0, 0, 0.6);
