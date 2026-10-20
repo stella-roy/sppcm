@@ -1,0 +1,6 @@
+@use "../1-settings/variables" as *;
+
+
+.wrapper {
+    padding: 0 max(16px, 8vw);
+}
