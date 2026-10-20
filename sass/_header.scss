@@ -5,4 +5,18 @@ header {
     background-color: $primary_color;
 }
 
-//testing
+.main-navigation {
+  align-items: center;
+  background-color: beige;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  text-align: center;
+  top: 100px;
+  translate: 100%;
+  transition: translate 500ms ease-in-out;
+  width: 100%;
+  z-index: 1;
+}
