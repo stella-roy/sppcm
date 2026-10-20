@@ -17,10 +17,14 @@ get_header();
 
 <main id="primary" class="site-main">
 
-    <iframe width="560" height="315"
-        src="https://www.youtube.com/embed/59EscRSj9rw?si=OJ38Fa365C4xdXXH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
-        clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-    </iframe>
+    <div class="video">
+        <div class="wrapper">
+            <iframe class="video__iframe"
+                src="https://www.youtube.com/embed/59EscRSj9rw?si=OJ38Fa365C4xdXXH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+                clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+    </div>
 
     <h1>Le Syndicat des professeurs et professeures du Collège de Maisonneuve</h1>
 
