@@ -11,49 +11,70 @@
 
 ?>
 <!doctype html>
-<html <?php language_attributes(); ?>>
-<head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" /> -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search"
+    />
+  </head>
+  <body>
+    <header>
 
-	<?php wp_head(); ?>
-</head>
+        <!-- Entête -->
+      <img id="logo" src="assets/img/logo.png" alt="" />
+      <h2 class="titre">
+        Syndicat des professeurs et professeures du Collège de Maisonneuve
+      </h2>
+      <div class="header-droite">
+      <span class="material-symbols-outlined" id="search-mobile">search</span>
+      <label for="burger" class="bouton">
+        <div class="ligne ligne1"></div>
+        <div class="ligne ligne2"></div>
+        <div class="ligne ligne3"></div>
+      </label>
+      </div>
 
-<body <?php body_class(); ?>>
-<?php wp_body_open(); ?>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'underscores' ); ?></a>
+      <input type="checkbox" id="burger" class="cc-burger" />
 
-	<header id="masthead" class="site-header" data-header>
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$underscores_description = get_bloginfo( 'description', 'display' );
-			if ( $underscores_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $underscores_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'underscores' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+      <!-- Navigation header -->
+      <nav class="navigation">
+        <ul>
+          <li><a href="">Actualités</a></li>
+          <hr />
+          <li><a href="">Infolettres</a></li>
+          <hr />
+          <li class="sous-nav">
+            Conditions de travail
+            <ul class="sous-menu">
+              <li><a href="">Avantages sociaux</a></li>
+              <li><a href="">Convention collective</a></li>
+              <li><a href="">Relations de travail</a></li>
+            </ul>
+          </li>
+          <hr />
+          <li class="sous-nav">
+            Nous connaître
+            <ul class="sous-menu">
+              <li><a href="">Comité exécutif</a></li>
+              <li><a href="">Élections</a></li>
+              <li><a href="">Galerie multimédia</a></li>
+              <li><a href="">Notre histoire</a></li>
+              <li><a href="">Régie interne</a></li>
+            </ul>
+          </li>
+          <hr />
+          <li><a href="">Contact</a></li>
+          <hr />
+          <li id="search-tablette"><span class="material-symbols-outlined" id="search">search</span></li>
+        </ul>
+      </nav>
+      <!-- Navigation -->
+    </header>
+  </body>
+</html>
