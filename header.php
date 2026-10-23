@@ -27,7 +27,7 @@
     <header>
 
         <!-- Entête -->
-      <img id="logo" src="assets/img/logo.png" alt="" />
+      <!-- <img id="logo" src="assets/img/logo.png" alt="" /> -->
       <h2 class="titre">
         Syndicat des professeurs et professeures du Collège de Maisonneuve
       </h2>
