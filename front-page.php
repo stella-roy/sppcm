@@ -50,9 +50,21 @@ get_header();
             <h2>Infolettre récente</h2>
 
             <div class="infolettre">
-                <h3></h3>
+                <h3>10 octobre 2026</h3>
+                <ol>
+                    <li>Journée internationale des travailleuses et des travailleurs</li>
+                    <li>Toujours pas de nouvelles du CPNC</li>
+                    <li>Période de mise en candidature pour le poste de Vice-présidence aux affaires pédagogiques</li>
+                    <li>Appel à ne pas traverser les piquets de grève</li>
+                    <li>Souvenirs du Jour de la Terre le 25 avril</li>
+                    <li>Soutien à la Palestine</li>
+                    <li>Manifestation pro-choix le 1er juin</li>
+                </ol>
             </div>
 
+                <div class="container">
+                    <button>Lire plus...</button>
+                </div>
         </section>
     </div>
 

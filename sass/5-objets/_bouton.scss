@@ -1,0 +1,16 @@
+@use '../1-settings/variables' as *;
+
+
+button {
+    background-color: $color_action;
+    border: none;
+    border-radius: $btn_shape;
+    box-shadow: $icn_shadow;
+    color: $darkest_text;
+    font-size: 13px;
+    font-weight: $font-bold;
+    margin-top: 9px;
+    padding: 10px 15px;
+}
+
+.container {text-align: right;}

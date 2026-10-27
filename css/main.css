@@ -352,8 +352,28 @@ p {
   font-size: clamp(16px, 1vw + 0.8rem, 18px);
 }
 
+ol {
+  list-style-position: inside;
+}
+
 .wrapper {
   padding: 0 max(16px, 8vw);
+}
+
+button {
+  background-color: #FF3C2E;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 3px 2.9px 0px rgba(0, 0, 0, 0.6);
+  color: #000000;
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 9px;
+  padding: 10px 15px;
+}
+
+.container {
+  text-align: right;
 }
 
 header {
