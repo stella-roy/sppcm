@@ -376,6 +376,18 @@ button {
   text-align: right;
 }
 
+a {
+  color: #F7EBDA;
+}
+
+li,
+a {
+  color: #1C0605;
+  font-size: 40px;
+  margin: 2rem;
+  text-align: center;
+}
+
 header {
   align-items: center;
   background-color: #96211C;
@@ -386,23 +398,32 @@ header {
   height: 78px;
 }
 
-a {
-  color: #F7EBDA;
-}
-
-li,
-a {
-  color: #1C0605;
-  font-size: 40px;
-  margin: 2rem;
-}
-
 hr {
   width: 60%;
 }
 
 input {
   display: none;
+}
+
+.bouton {
+  display: flex;
+  height: 50px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 50px;
+  z-index: 2;
+}
+
+.cc-burger:checked ~ .navigation {
+  translate: 0;
+}
+
+.header-droite {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
 }
 
 .navigation {
@@ -415,26 +436,14 @@ input {
   position: fixed;
   text-align: center;
   top: 100px;
-  translate: 100%;
   transition: translate 500ms ease-in-out;
   width: 100%;
   z-index: 1;
 }
 
-.bouton {
-  display: flex;
-  height: 50px;
-  flex-direction: column;
-  justify-content: space-evenly;
-  width: 50px;
-  z-index: 2;
-}
-
-.header-droite {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  width: 30%;
+.menu-item-has-children, .sub-menu {
+  margin: 0;
+  text-align: center;
 }
 
 .ligne {
@@ -445,20 +454,20 @@ input {
   width: 70%;
 }
 
-.su {
+.menu {
+  margin: 0;
+}
+
+.sub-nav {
   display: none;
 }
 
-.sous-nav:hover .su {
+.menu-item:hover .sub-nav {
   display: block;
 }
 
 .site-title {
   display: none;
-}
-
-.cc-burger:checked ~ .navigation {
-  translate: 0;
 }
 
 #logo {
@@ -520,6 +529,14 @@ input {
     margin: 0;
     translate: 0;
   }
+  .navigation {
+    background: none;
+    display: flex;
+    flex-direction: row;
+    height: 0%;
+    margin: 0;
+    translate: 0;
+  }
   .navigation hr {
     display: none;
   }
@@ -539,7 +556,7 @@ input {
     transform: scaleX(-1);
     scale: 1;
   }
-  .su > li {
+  .sub-nav > li {
     background-color: #FF3C2E;
   }
 }
@@ -548,15 +565,16 @@ input {
   header {
     height: 158px;
   }
-  li {
-    background-color: pink;
+  header li {
+    background-color: #96211C;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
     box-shadow: 0px 3px 2.9px 0px rgba(0, 0, 0, 0.6);
     padding: 1rem;
     margin: 0;
   }
-  li, a {
+  li,
+  a {
     font-size: 24px;
   }
   ul {
