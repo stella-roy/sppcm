@@ -60,11 +60,12 @@ get_header();
                     <li>Soutien à la Palestine</li>
                     <li>Manifestation pro-choix le 1er juin</li>
                 </ol>
-            </div>
 
                 <div class="container">
                     <button>Lire plus...</button>
                 </div>
+            </div>
+
         </section>
     </div>
 
