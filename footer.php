@@ -1,17 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SPPCM</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-  <main>
-    
-  </main> -->
-
 <footer>
 
     <div class="footer-images">
@@ -46,6 +32,7 @@
             <img class="card" src="images/logomainrougeside-2-768x284.png" alt="carousel">
           </a>
         </div>
+
       </div>
         <a href="">
           <img class="logo" src="images/logo/Vector.png" alt="SPPCM LOGO">
@@ -69,7 +56,7 @@
     </div>
 
     <div class="copyright">
-      <p> Copyright &copy; 2023 SPPCM - Tous droits réservés.</p>
+      <p> Copyright &copy; 2026 SPPCM - Tous droits réservés.</p>
 
       <ul class="portfolio">
         <li><a href="https://www.behance.net/stellaroy2">Stella Roy</a></li>
@@ -82,7 +69,3 @@
     </div>
 
 </footer>
-
-  
-<!-- </body>
-</html> -->
