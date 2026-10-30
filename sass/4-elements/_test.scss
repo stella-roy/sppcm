@@ -2,5 +2,22 @@
 
 
 main {
-    background-color: $primary_color;
+    background-color: $bg_color;
+    font-family: $font;
+}
+
+h1 {
+    
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    font-size: $fs_md;
+}
+
+ol {
+  list-style-position: inside;
 }

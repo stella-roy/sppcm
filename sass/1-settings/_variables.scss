@@ -6,6 +6,10 @@
 // ROOT
 // ----------------------------------------
 
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 //***** COULEURS DU BACKGROUND *****//
 $bg_color: #F7EBDA;
 
@@ -18,6 +22,7 @@ $color_action: #FF3C2E;
 $color_active: #FF6A5F;
 
 //***** COULEURS DES TEXTES *****//
+$darkest_text: #000000;
 $dark_text: #1E1E1E;
 $light_text: #F7EBDA;
 
@@ -52,4 +57,4 @@ $btn_shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.5);
 $border_sppcm:20px 0 20px 0;
 
 //***** BORDER DES BOUTONS *****//
-$btn_shape: 50px;
+$btn_shape: 20px;
