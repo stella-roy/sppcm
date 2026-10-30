@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -9,8 +9,8 @@
 <body>
 
   <main>
-    <!-- main stuff -->
-  </main>
+    
+  </main> -->
 
 <footer>
 
@@ -84,6 +84,5 @@
 </footer>
 
   
-</body>
-</html>
-?>
+<!-- </body>
+</html> -->
