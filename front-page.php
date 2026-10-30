@@ -46,6 +46,106 @@ get_header();
 
         </section>
 
+        <div class="actualités">
+        <!-- Titre -->
+        <h1>Actualités récentes</h2>
+        
+      <div class="articles">
+        <!-- Article 1 -->
+        <div class="article">
+            <div class="article-image"></div>
+            <h2>Article</h2>
+            <div class="date">
+                00 mois année
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Deleniti repellat corrupti expedita eum quam repellendus amet eligendi neque incidunt mollitia.
+            </p>
+            <div class="container">
+            <button>Lire plus</button>
+            </div>
+        </div>
+
+        <!-- Article 2 -->
+       <div class="article">
+            <h2>Article</h2>
+            <div class="date">
+                00 mois année
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Deleniti repellat corrupti expedita eum quam repellendus amet eligendi neque incidunt mollitia.
+            </p>
+            <div class="container">
+            <button>Lire plus</button>
+            </div>
+        </div>
+
+        <!-- Article 3 -->
+        <div class="article">
+            <div class="article-image"></div>
+            <h2>Article</h2>
+            <div class="date">
+                00 mois année
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Deleniti repellat corrupti expedita eum quam repellendus amet eligendi neque incidunt mollitia.
+            </p>
+            <div class="container">
+            <button>Lire plus</button>
+            </div>
+        </div>
+        
+        <!-- Article 4 -->
+        <div class="article">
+            <h2>Article</h2>
+            <div class="date">
+                00 mois année
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Deleniti repellat corrupti expedita eum quam repellendus amet eligendi neque incidunt mollitia.
+            </p>
+            <div class="container">
+            <button>Lire plus</button>
+            </div>
+        </div>
+
+        <!-- Article 5 -->
+        <div class="article">
+            <div class="article-image"></div>
+            <h2>Article</h2>
+            <div class="date">
+                00 mois année
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Deleniti repellat corrupti expedita eum quam repellendus amet eligendi neque incidunt mollitia.
+            </p>
+            <div class="container">
+            <button>Lire plus</button>
+            </div>
+        </div>
+
+        <!-- Article 6 -->
+        <div class="article">
+            <h2>Article</h2>
+            <div class="date">
+                00 mois année
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Deleniti repellat corrupti expedita eum quam repellendus amet eligendi neque incidunt mollitia.
+            </p>
+            <div class="container">
+            <button>Lire plus</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
         <section>
             <h2>Infolettre récente</h2>
 
@@ -60,11 +160,12 @@ get_header();
                     <li>Soutien à la Palestine</li>
                     <li>Manifestation pro-choix le 1er juin</li>
                 </ol>
-            </div>
 
                 <div class="container">
                     <button>Lire plus...</button>
                 </div>
+            </div>
+
         </section>
     </div>
 
