@@ -442,7 +442,8 @@ input {
   z-index: 1;
 }
 
-.menu-item-has-children, .sub-menu {
+.menu-item-has-children,
+.sub-menu {
   margin: 0;
   text-align: center;
 }
@@ -491,6 +492,7 @@ header img {
   a {
     font-size: 8px;
     margin: 0;
+    height: 100%;
   }
   header {
     background-position-x: right;
@@ -499,7 +501,7 @@ header img {
     justify-content: flex-start;
     gap: 2rem;
   }
-  header li {
+  header .navigation a {
     background-color: #FF3C2E;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -509,14 +511,14 @@ header img {
     margin: 0;
   }
   ul {
-    align-items: center;
+    align-items: top;
     display: flex;
     flex-direction: row;
     gap: 2rem;
     margin-right: auto;
     margin-left: auto;
   }
-  ul .sous-menu {
+  ul .sub-menu {
     gap: 0;
   }
   .bouton {
@@ -533,7 +535,7 @@ header img {
   }
   .navigation {
     background: none;
-    height: 50%;
+    height: 100%;
     left: 0;
     position: fixed;
     text-align: center;
@@ -550,6 +552,12 @@ header img {
     display: block;
     width: 40%;
   }
+  .sub-menu {
+    margin-top: 2px;
+  }
+  .sub-nav > li {
+    background-color: #FF3C2E;
+  }
   header img {
     width: 20%;
   }
@@ -560,9 +568,6 @@ header img {
     display: block;
     transform: scaleX(-1);
     scale: 1;
-  }
-  .sub-nav > li {
-    background-color: #FF3C2E;
   }
 }
 /* Desktop */
@@ -917,7 +922,7 @@ button {
 /*Ordi*/
 @media screen and (min-width: 1024px) {
   .actualités {
-    width: 800px;
+    width: 1000px;
   }
   .articles {
     grid-template-columns: auto auto auto;
