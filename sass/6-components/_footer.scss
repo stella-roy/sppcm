@@ -140,6 +140,30 @@ footer p{
 
 }
 
+.search-form {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.search-form input[type="search"] {
+    display: block;
+    min-width: 250px;
+    height: 40px;
+    padding: 0 1rem;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    background: #fff;
+    color: #333;
+    font-size: 1rem;
+}
+
+.search-form .screen-reader-text {
+    position: absolute;
+    left: -9999px;
+}
+
 @keyframes spin {
   from {translate: 0;}
   to {translate: -100%;}

@@ -74,5 +74,74 @@ function underscores_child_scripts() {
 add_action( 'wp_enqueue_scripts', 'underscores_child_scripts' );
 */
 
+/**
+ * Redéfinit les emplacements de menus du thème parent.
+ * Les clés sont fusionnées : 'menu-1' voit son libellé remplacé et 'menu-2' est ajoutée.
+ *
+ * @return void
+ */
+function underscores_child_menus() {
+    register_nav_menus(
+        array(
+            'menu-1' => esc_html__( 'Header', 'underscores' ),
+            'menu-2' => esc_html__( 'Footer', 'underscores' ),
+        )
+    );
+}
+add_action( 'after_setup_theme', 'underscores_child_menus', 20 );
 
+
+
+/**
+ * Ajoute au Customizer une section de réglages propres au SPPCM.
+ *
+ * @param WP_Customize_Manager $wp_customize Objet du Customizer, fourni par le hook.
+ * @return void
+ */
+function underscores_child_parametres_ajustables( $wp_customize ) {
+	
+    // Section : regroupe les contrôles dans un panneau du Customizer (priorité 30 : sous l'identité du site).
+    $wp_customize->add_section( 
+		'sppcm_parametres_ajustables', 
+		array(
+			'title' => __( 'Contrôles personnalisés pour SPPCM' ),
+			'priority' => 30
+		)
+	);
+
+	/**
+     * Texte de présentation de l'organisation (footer).
+     */
+
+    // Réglage : définit la donnée stockée (en base de données, dans les options du thème).
+	$wp_customize->add_setting( 
+		'sppcm_presentation_syndicat_footer'
+	);
+
+    // Contrôle : le champ affiché dans l'interface, lié au réglage par le même identifiant.
+	$wp_customize->add_control( 
+        'sppcm_presentation_syndicat_footer', 
+        array(
+            'type' => 'textarea',
+            'label' => __( 'Présentation de l\'organisation dans le footer' ),
+            'section' => 'sppcm_parametres_ajustables'
+        ) 
+    );
+
+}
+add_action( 'customize_register', 'underscores_child_parametres_ajustables' );
+
+
+function my_search_form_shortcode() {
+    return get_search_form( false ); // false = return instead of echo
+}
+add_shortcode( 'search_bar', 'my_search_form_shortcode' );
+
+function limit_search_to_posts( $query ) {
+    if ( $query->is_search() && $query->is_main_query() && ! is_admin() ) {
+        $query->set( 'post_type', 'post' );
+    }
+}
+add_action( 'pre_get_posts', 'limit_search_to_posts' );
 ?>
+

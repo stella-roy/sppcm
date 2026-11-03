@@ -1,5 +1,7 @@
 <footer>
 
+
+
     <div class="footer-images">
       <div class="carousel">
 
@@ -35,7 +37,22 @@
 
       </div>
         <a href="">
-          <img class="logo" src="images/logo/Vector.png" alt="SPPCM LOGO">
+          <!-- <img class="logo" src="images/logo/Vector.png" alt="SPPCM LOGO"> -->
+                    
+          <?php
+              /**
+               * Logo du site (Apparence → Personnaliser → Identité du site).
+               * the_custom_logo() affiche directement le lien vers l'accueil et l'image.
+               * Rien à échapper : le HTML est généré par WordPress.
+               */
+
+              if ( has_custom_logo() ) : ?>
+                  <div class="footer__logo">
+                      <?php the_custom_logo(); ?>
+                  </div>
+              <?php endif; 
+          ?>
+
         </a>
 
       <div class="reseauSociaux">
@@ -56,7 +73,16 @@
     </div>
 
     <div class="copyright">
-      <p> Copyright &copy; 2026 SPPCM - Tous droits réservés.</p>
+          <?php
+        /**
+         * Texte de présentation du syndicat dans le pied de page,en préservant les retours à la ligne.
+         */
+    ?>
+    <div>
+        <?php echo nl2br( esc_html( get_theme_mod( 'sppcm_presentation_syndicat_footer' ) ) ); ?>
+    </div>
+
+      <!-- <p> Copyright &copy; 2026 SPPCM - Tous droits réservés.</p> -->
 
       <ul class="portfolio">
         <li><a href="https://www.behance.net/stellaroy2">Stella Roy</a></li>
@@ -67,5 +93,7 @@
       </ul>
 
     </div>
+              
+    <?php get_search_form(); ?>
 
 </footer>
