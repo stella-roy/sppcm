@@ -13,7 +13,10 @@
     margin-left: auto;
     margin-right: auto;
 }
-.actualités h1 {text-align: center;}
+
+.actualités h1 {
+    text-align: center;
+}
 
 .articles {
     display: grid;
@@ -28,7 +31,9 @@
     border-bottom: 1px solid #d9d9d9;
 }
 
-.article h2{ font-size: 20px;}
+.article h2 {
+    font-size: 20px;
+}
 
 .article-image {
     width: 100%;
@@ -50,7 +55,10 @@
     margin: 0;
 }
 
-.container {text-align: right;}
+.container {
+    text-align: right;
+}
+
 button {
     background-color: $primary_color;
     border: none;
@@ -61,41 +69,80 @@ button {
     margin-top: 9px;
     padding: 8px 15px;
 }
+
 /*Tablette*/
 @media screen and (min-width: 768px) {
 
-    .actualités{width: 800px;}
+    .actualités {
+        width: 800px;
+    }
+
     .articles {
         grid-template-columns: auto auto;
         gap: 40px;
     }
-    .actualités h1 {font-size: 48px;}
-    .actualités h2 {font-size: 24px;}
-    .date {font-size: 24px;}
-    .articles p{font-size: 18px;}
-    button{font-size: 18px;}
-    .article-image { 
+
+    .actualités h1 {
+        font-size: 48px;
+    }
+
+    .actualités h2 {
+        font-size: 24px;
+    }
+
+    .date {
+        font-size: 24px;
+    }
+
+    .articles p {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 18px;
+    }
+
+    .article-image {
         width: 350px;
         height: 200px;
     }
 
 }
+
 /*Ordi*/
 @media screen and (min-width: 1024px) {
 
-    .actualités{width: 1000px;}
+
+    .actualités {width: 65rem;}
+
     .articles {
         grid-template-columns: auto auto auto;
         gap: 100px;
     }
-    .article-image { 
+
+    .article-image {
         width: 200px;
         height: 150px;
     }
-    .actualités h1 {font-size: 64px;}
-    .actualités h2 {font-size: 32px;}
-    .date {font-size: 24px;}
-    .articles p{font-size: 18px;}
-    button{font-size: 18px;}
+
+    .actualités h1 {
+        font-size: 64px;
+    }
+
+    .actualités h2 {
+        font-size: 32px;
+    }
+
+    .date {
+        font-size: 24px;
+    }
+
+    .articles p {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 18px;
+    }
 
 }
