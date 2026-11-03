@@ -18,6 +18,11 @@
     text-align: center;
 }
 
+.actualités h2 {
+    display: block;
+    text-align: left;
+}
+
 .articles {
     display: grid;
     grid-template-columns: 1fr;
@@ -67,6 +72,7 @@ button {
     font-size: 13px;
     font-weight: $font_bold;
     margin-top: 9px;
+    margin-bottom: 4px;
     padding: 8px 15px;
 }
 
@@ -74,8 +80,7 @@ button {
 @media screen and (min-width: 768px) {
 
     .actualités {
-        
-        width: 800px;
+        width: auto;
     }
 
     .articles {
@@ -89,6 +94,8 @@ button {
 
     .actualités h2 {
         font-size: 24px;
+        display: block;
+        text-align: left;
     }
 
     .date {
@@ -115,10 +122,8 @@ button {
 
 
     .actualités {
-        width: 60rem;
-        
-        // word-wrap: break-word;
-        // white-space: wrap;
+        // width: 60rem;
+        width: auto;
     }
 
     .articles {
