@@ -2,15 +2,15 @@
 
 
 button {
-    background-color: $color_action;
+    background-color: $primary_color;
     border: none;
     border-radius: $btn_shape;
     box-shadow: $icn_shadow;
-    color: $darkest_text;
+    color: $light_text;
     font-size: 13px;
-    font-weight: $font-bold;
+    font-weight: $font_bold;
     margin-top: 9px;
-    padding: 10px 15px;
+    padding: 8px 15px;
 }
 
 .container {text-align: right;}

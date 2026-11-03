@@ -1,15 +1,18 @@
 @use "../1-settings/variables" as *;
 
 .video {
-    width: 100%;
-    /* Définit le ratio 16/9 natif (correspond à vos 56.25%) */
+    /* Definit le ratio 16/9 natif (correspond à vos 56.25%) */
     aspect-ratio: 16 / 9; 
     
-    /* Limite la hauteur maximale à 80% de la hauteur du viewport (ajustez selon votre besoin) */
-    max-height: 42vh; 
-    
-    /* Centre la vidéo horizontalement si elle atteint sa largeur/hauteur max */
+    /* Centre la video horizontalement si elle atteint sa largeur/hauteur max */
     margin: 0 auto; 
+
+    /* Limite la hauteur maximale à 80% de la hauteur du viewport (ajustez selon votre besoin) */
+    max-height: 42vh;
+    
+    overflow-y: hidden;
+
+    width: 100%;
 }
 
 .video__iframe {

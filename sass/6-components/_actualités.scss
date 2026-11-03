@@ -60,13 +60,14 @@
 }
 
 button {
-    margin-top: 9px;
-    font-size: 13px;
-    background-color: #96211C;
+    background-color: $primary_color;
     border: none;
     border-radius: 20px;
+    color: $light_text;
+    font-size: 13px;
+    font-weight: $font_bold;
+    margin-top: 9px;
     padding: 8px 15px;
-    color: #F7EBDA;
 }
 
 /*Tablette*/
