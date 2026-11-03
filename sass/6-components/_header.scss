@@ -139,8 +139,6 @@ header img {
     margin: 0;
   }
 
-
-
   ul {
     align-items: top;
     display: flex;
@@ -218,29 +216,5 @@ header img {
 /* Desktop */
 
 @media (min-width: 1024px) {
-  header {
-    height: 158px;
-  }
-
-  header li {
-    background-color: $color_action;
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    box-shadow: 0px 3px 2.9px 0px rgba(0, 0, 0, 0.6);
-    padding: 1rem;
-    margin: 0;
-  }
-
-  li,
-  a {
-    font-size: 24px;
-  }
-
-  ul {
-    align-items: center;
-    display: flex;
-    gap: 2rem;
-    margin-right: auto;
-    margin-left: auto;
-  }
+  
 }
