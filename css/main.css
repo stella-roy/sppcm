@@ -682,6 +682,10 @@ footer nav a:hover {
   border-radius: 6px;
 }
 
+footer p {
+  font-size: 0.85rem;
+}
+
 .copyright {
   font-size: 0.6rem;
   margin: 0;
@@ -704,6 +708,7 @@ footer nav a:hover {
 .portfolio a {
   color: inherit;
   text-decoration: none;
+  font-size: 0.85rem;
 }
 
 .portfolio a:hover {
