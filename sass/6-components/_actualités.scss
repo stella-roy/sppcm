@@ -112,7 +112,7 @@ button {
 @media screen and (min-width: 1024px) {
 
 
-    .actualités {width: 65rem;}
+    .actualités {width: 93rem;}
 
     .articles {
         grid-template-columns: auto auto auto;
@@ -130,6 +130,8 @@ button {
 
     .actualités h2 {
         font-size: 32px;
+        display: block;
+        text-align: left;
     }
 
     .date {
