@@ -7,13 +7,20 @@ button {
     border-radius: $btn_shape;
     box-shadow: $icn_shadow;
     color: $light_text;
+    cursor: pointer;
     font-size: 13px;
     font-weight: $font_bold;
     margin-top: 9px;
     padding: 8px 15px;
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+button:hover {
+    transform: scale(1.08); /* Agrandit le bouton de 8% */
+  
 }
 
 .container {
-    padding-bottom: 6px;
+    padding: 8px;
     text-align: right;
 }
