@@ -361,15 +361,15 @@ ol {
 }
 
 button {
-  background-color: #FF3C2E;
+  background-color: #96211C;
   border: none;
   border-radius: 20px;
   box-shadow: 0px 3px 2.9px 0px rgba(0, 0, 0, 0.6);
-  color: #000000;
+  color: #F7EBDA;
   font-size: 13px;
   font-weight: bold;
   margin-top: 9px;
-  padding: 10px 15px;
+  padding: 8px 15px;
 }
 
 .container {
@@ -788,6 +788,18 @@ footer p {
     margin-left: 10px;
   }
 }
+.btn-sombre {
+  background-color: #F7EBDA;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 3px 2.9px 0px rgba(0, 0, 0, 0.6);
+  color: #96211C;
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 9px;
+  padding: 8px 15px;
+}
+
 .infolettre {
   background-color: #96211C;
   border-radius: 20px 0 20px 0;
@@ -796,13 +808,14 @@ footer p {
 }
 
 .video {
-  width: 100%;
-  /* Définit le ratio 16/9 natif (correspond à vos 56.25%) */
+  /* Definit le ratio 16/9 natif (correspond à vos 56.25%) */
   aspect-ratio: 16/9;
+  /* Centre la video horizontalement si elle atteint sa largeur/hauteur max */
+  margin: 0 auto;
   /* Limite la hauteur maximale à 80% de la hauteur du viewport (ajustez selon votre besoin) */
   max-height: 42vh;
-  /* Centre la vidéo horizontalement si elle atteint sa largeur/hauteur max */
-  margin: 0 auto;
+  overflow-y: hidden;
+  width: 100%;
 }
 
 .video__iframe {
@@ -862,13 +875,14 @@ footer p {
 }
 
 button {
-  margin-top: 9px;
-  font-size: 13px;
   background-color: #96211C;
   border: none;
   border-radius: 20px;
-  padding: 8px 15px;
   color: #F7EBDA;
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 9px;
+  padding: 8px 15px;
 }
 
 /*Tablette*/

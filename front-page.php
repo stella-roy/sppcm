@@ -63,7 +63,7 @@ get_header();
                 Deleniti repellat corrupti expedita eum quam repellendus amet eligendi neque incidunt mollitia.
             </p>
             <div class="container">
-            <button>Lire plus</button>
+            <button>Lire plus...</button>
             </div>
         </div>
 
@@ -78,7 +78,7 @@ get_header();
                 Deleniti repellat corrupti expedita eum quam repellendus amet eligendi neque incidunt mollitia.
             </p>
             <div class="container">
-            <button>Lire plus</button>
+            <button>Lire plus...</button>
             </div>
         </div>
 
@@ -94,7 +94,7 @@ get_header();
                 Deleniti repellat corrupti expedita eum quam repellendus amet eligendi neque incidunt mollitia.
             </p>
             <div class="container">
-            <button>Lire plus</button>
+            <button>Lire plus...</button>
             </div>
         </div>
         
@@ -109,7 +109,7 @@ get_header();
                 Deleniti repellat corrupti expedita eum quam repellendus amet eligendi neque incidunt mollitia.
             </p>
             <div class="container">
-            <button>Lire plus</button>
+            <button>Lire plus...</button>
             </div>
         </div>
 
@@ -125,7 +125,7 @@ get_header();
                 Deleniti repellat corrupti expedita eum quam repellendus amet eligendi neque incidunt mollitia.
             </p>
             <div class="container">
-            <button>Lire plus</button>
+            <button>Lire plus...</button>
             </div>
         </div>
 
@@ -140,7 +140,7 @@ get_header();
                 Deleniti repellat corrupti expedita eum quam repellendus amet eligendi neque incidunt mollitia.
             </p>
             <div class="container">
-            <button>Lire plus</button>
+            <button>Lire plus...</button>
             </div>
         </div>
         </div>
@@ -162,7 +162,7 @@ get_header();
                 </ol>
 
                 <div class="container">
-                    <button>Lire plus...</button>
+                    <button class="btn-sombre">Lire plus...</button>
                 </div>
             </div>
 
