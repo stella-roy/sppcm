@@ -132,6 +132,10 @@ function underscores_child_parametres_ajustables( $wp_customize ) {
 add_action( 'customize_register', 'underscores_child_parametres_ajustables' );
 
 
+
+
+
+
 function my_search_form_shortcode() {
     return get_search_form( false ); // false = return instead of echo
 }
@@ -143,5 +147,33 @@ function limit_search_to_posts( $query ) {
     }
 }
 add_action( 'pre_get_posts', 'limit_search_to_posts' );
-?>
 
+
+
+/**
+ * Retourne le code d'un SVG de la médiathèque, pour l'afficher en ligne.
+ * Le SVG est assaini à l'envoi par Safe SVG : on lit donc le fichier tel quel.
+ *
+ * @param int $attachment_id ID de la pièce jointe (champ ACF Image, format de retour « ID de l'image »).
+ * @return string Code SVG, ou chaîne vide si le fichier est introuvable ou n'est pas un SVG.
+ */
+function underscores_child_get_inline_svg( int $attachment_id ): string {
+
+    // Refuse tout fichier qui n'est pas un SVG.
+    if ( 'image/svg+xml' !== get_post_mime_type( $attachment_id ) ) {
+        return '';
+    }
+
+    $path = get_attached_file( $attachment_id );
+
+    if ( ! $path || ! is_readable( $path ) ) {
+        return '';
+    }
+
+    // phpcs:ignore WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents
+    $svg = file_get_contents( $path );
+
+    return false === $svg ? '' : $svg;
+}
+
+?>

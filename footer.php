@@ -1,5 +1,19 @@
-<footer>
+<?php
 
+
+$bg_texture = wp_get_attachment_image_url( 8043 );
+
+
+
+
+
+
+?>
+
+
+
+
+<footer style="background-image: url('<?= $bg_texture; ?>')">
 
 
     <div class="footer-images">
@@ -7,7 +21,9 @@
 
         <div class="group">
           <a href="https://www.frontcommun.org/">
+
             <img class="card" src="images/FC-300x111.jpg" alt="carousel">
+
           </a>
           <a href="https://fneeq.qc.ca/fr/accueil/">
             <img class="card" src="images/NEGO_bandeau_vert-mains-300x111.jpg" alt="carousel">
@@ -36,6 +52,64 @@
         </div>
 
       </div>
+
+
+<?php
+
+
+
+
+/*
+
+// args
+$args = array(
+    'posts_per_page' => -1,
+    'post_type'  => 'lien-externe',
+);
+
+
+// query
+$the_query = new WP_Query( $args );
+
+
+//var_dump( $the_query );
+
+?>
+<?php if( $the_query->have_posts() ): ?>
+    <div class="carousel">
+
+        <div class="group">
+    <?php while( $the_query->have_posts() ) : $the_query->the_post(); 
+
+      // récupérer les valeurs pour chaque lien externe
+    
+    ?>
+            <a href="<?= // lien-externe ; ?>">
+                <img src="<?= // url de l'image ; ?>" target="_blank" rel="noopener noreferrer" />
+            </a>
+    <?php endwhile; ?>
+      </div>
+
+    </div>
+<?php endif; ?>
+
+<?php wp_reset_query();   // Restore global post data stomped by the_post(). ?>
+
+
+*/
+
+
+
+
+
+
+
+
+
+?>
+
+
+
         <a href="">
           <!-- <img class="logo" src="images/logo/Vector.png" alt="SPPCM LOGO"> -->
                     
@@ -55,9 +129,13 @@
 
         </a>
 
+
+
+
+
       <div class="reseauSociaux">
         <a href="https://www.csn.qc.ca/">
-          <img src="images/logo/csnLogo.png">
+          <img src="https://www.sppcm.org/wp-content/uploads/2018/03/logo_fb.png">
         </a>
         <a href="https://fneeq.qc.ca/fr/accueil/">
           <img src="images/logo/FNEEQ-logo.png">
