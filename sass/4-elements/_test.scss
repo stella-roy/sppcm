@@ -1,17 +1,21 @@
 @use '../1-settings/variables' as *;
 
-
-main {
-    background-color: $bg_color;
-    font-family: $font;
+h1 {
+    font-size: $fs_xxl;
 }
 
 h2 {
+    font-size: $fs_xl;
     text-align: center;
 }
 
 h3 {
     padding-bottom: 10px;
+}
+
+main {
+    background-color: $bg_color;
+    font-family: $font;
 }
 
 ol {
@@ -34,7 +38,7 @@ ol li::before {
 
 }
 
-ul, ol {
+ol, ul {
     margin: 0;
 }
 
