@@ -15,7 +15,27 @@ h3 {
 }
 
 ol {
-  list-style-position: inside;
+  counter-reset: item; /* Initialiser un compteur */
+  list-style: none; // Supprimer le style de liste par defaut
+  padding: 0;
+}
+
+ol li {
+    align-items: flex-start;
+    display: flex;
+    margin-bottom: 0.5rem;
+}
+
+ol li::before {
+    content: counter(item) "."; /* Afficher le compteur suivi d'un point */
+    counter-increment: item; /* Incrémenter le compteur pour chaque élément de la liste */
+    flex-shrink: 0; /* Empecher le compteur de retrecir */
+    width: 1.1rem; /* Definir une largeur fixe pour le compteur */
+
+}
+
+ul, ol {
+    margin: 0;
 }
 
 p {
