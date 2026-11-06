@@ -1,5 +1,10 @@
 @use "../1-settings/variables" as *;
 
+*{
+  overflow-x: visible;
+  list-style: none;
+}
+
 // @import url(reset.css);
 header a {
   color: $bg_color;
@@ -10,12 +15,11 @@ a {
   color: $tertiary_color;
   font-size: 40px;
   margin: 2rem;
-  text-align: center;
 }
 
 header {
   align-items: center;
-  background-color: $primary_color;
+  background: $color_gradient;
   color: $bg_color;
   display: flex;
   justify-content: space-between;
@@ -54,6 +58,7 @@ header .bouton {
 .navigation {
   align-items: center;
   background-color: $bg_color;
+  color: $tertiary_color;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -67,10 +72,18 @@ header .bouton {
   z-index: 1;
 }
 
+.navigation{
+  color: $tertiary_color;
+}
+
 .menu-item-has-children,
 .sub-menu {
   margin: 0;
   text-align: center;
+}
+
+.menu-toggle{
+  display: none;
 }
 
 .ligne {
@@ -97,9 +110,8 @@ header .bouton {
   display: none;
 }
 
-header img {
+header .custom-logo {
   width: 30%;
-  padding: 2rem;
 }
 
 #search-mobile {
@@ -145,7 +157,6 @@ header img {
   }
 
   header ul {
-    align-items: center;
     display: flex;
     flex-direction: row;
     gap: 2rem;
@@ -162,24 +173,17 @@ header img {
   }
 
   .header-droite {
-    width: 10%;
-    background: none;
-    display: flex;
-    flex-direction: row;
-    height: 0%;
-    margin: 0;
-    translate: 0;
+    display: none;
   }
 
   .navigation {
     background: none;
-    height: 30%;
+    display: none;
+    height:20%;
     left: 0;
-    position: fixed;
-    text-align: center;
-    top: 100px;
+    position:absolute;
     translate: 0;
-    width: 100%;
+    top: 0;
     z-index: 1;
   }
 
@@ -187,10 +191,11 @@ header img {
     display: none;
   }
 
+  .site-branding{
+  }
+
   .site-title {
-    align-items: flex-start;
-    display: block;
-    width: 40%;
+    font-size: 40px;
   }
 
   .sub-menu {
@@ -201,12 +206,8 @@ header img {
     background-color: $color_action;
   }
 
-  header img {
+  header .custom-logo {
     width: 20%;
-  }
-
-  #search-mobile {
-    // display: none;
   }
 
   #search-tablette {
