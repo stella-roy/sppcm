@@ -15,6 +15,46 @@
 get_header();
 ?>
 
+
+<?php
+ /* Code PHP de dynamisation */
+
+  // Prendre une infolettre (-1 = toutes)
+  $args = array(
+    'posts_per_page' => 1,
+    'post_type' => 'infolettre'
+  );
+ 
+ 
+  // Faire une demande backend
+  $the_query = new WP_Query($args);
+ 
+  //var_dump($the_query);
+ 
+  ?>
+
+  <?php
+  /* Un loop */
+
+  if ($the_query->have_posts()): ?>
+      <?php while ($the_query->have_posts()) : $the_query->the_post();
+     
+        /* Obtenir les ACF de la base de donnees */
+        $data = get_fields();
+
+        /* Champs de l'infolettre  */
+        // Le titre est la date
+        $titre_infolettre = get_the_title();
+        $resume_infolettre = $data['resume-infolettre'];
+        $lien_infolettre = $data['lien-infolettre'];
+      
+      ?>
+
+  <?php  endwhile; ?>
+  <?php endif;
+  ?>
+ 
+
 <main id="primary" class="site-main">
 
     <?php /* Dynamiser la vidéo
@@ -150,7 +190,7 @@ get_header();
             <h2>Infolettre récente</h2>
 
             <div class="infolettre">
-                <h3>10 octobre 2026</h3>
+                <h3><?= $titre_infolettre ?></h3>
                 <ol>
                     <li>Journée internationale des travailleuses et des travailleurs</li>
                     <li>Toujours pas de nouvelles du CPNC</li>
@@ -162,7 +202,9 @@ get_header();
                 </ol>
 
                 <div class="container">
-                    <button class="btn-sombre">Lire plus...</button>
+                    <button class="btn-sombre">
+                        <a href="<?php echo esc_url($lien_infolettre); ?>" target="_blank" rel="noopener noreferrer">Lire plus...</a>
+                    </button>
                 </div>
             </div>
 

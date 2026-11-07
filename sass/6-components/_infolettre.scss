@@ -9,6 +9,12 @@
     font-weight: $font_bold;
     margin-top: 9px;
     padding: 8px 15px;
+    text-decoration: none;
+}
+
+.btn-sombre a {
+    color: $primary-color;
+    font-size: $fs_xs;
 }
 
 .infolettre {
@@ -17,6 +23,8 @@
     box-shadow: $rnd-shadow;
     color: $light-text;
     margin: 20px;
-    padding: 24px 32px;
+
+    // soustrait 5px en bas et 6px en haut pour le container du btn Lire plus
+    padding: 24px 26px 19px 32px;
 }
 

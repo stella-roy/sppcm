@@ -1,5 +1,23 @@
 @use '../1-settings/variables' as *;
 
+a {
+    color: $light-text;
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+}
+
+a:visited {
+    color: $light-text;
+    text-decoration: none;
+}
+
+button a {
+    margin: 0;
+}
+
 h1 {
     font-size: $fs_xxl;
 }
