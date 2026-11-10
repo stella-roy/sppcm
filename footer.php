@@ -3,10 +3,16 @@
 
 $bg_texture = wp_get_attachment_image_url( 8043 );
 
+$carousel1 = wp_get_attachment_image_url( 8018 );
+$carousel2 = wp_get_attachment_image_url( 8019 );
+$carousel3 = wp_get_attachment_image_url( 8020 );
+$carousel4 = wp_get_attachment_image_url( 8021 );
 
 
-
-
+$logo1 = wp_get_attachment_image_url( 8030 );
+$logo2 = wp_get_attachment_image_url( 8022 );
+$logo3 = wp_get_attachment_image_url( 8023 );
+$logo4 = wp_get_attachment_image_url( 8024 );
 
 ?>
 
@@ -21,33 +27,31 @@ $bg_texture = wp_get_attachment_image_url( 8043 );
 
         <div class="group">
           <a href="https://www.frontcommun.org/">
-
-            <img class="card" src="images/FC-300x111.jpg" alt="carousel">
-
+            <img class="card" src="<?= $carousel1; ?>" alt="carousel">
           </a>
           <a href="https://fneeq.qc.ca/fr/accueil/">
-            <img class="card" src="images/NEGO_bandeau_vert-mains-300x111.jpg" alt="carousel">
+            <img class="card" src="<?= $carousel2; ?>" alt="carousel">
           </a>
           <a href="https://secteurpublic.quebec/">
-            <img class="card" src="images/bonbord-300x111.png" alt="carousel">
+            <img class="card" src="<?= $carousel3; ?>" alt="carousel">
           </a>
           <a href="https://www.nonauxhausses.org/">
-            <img class="card" src="images/logomainrougeside-2-768x284.png" alt="carousel">
+            <img class="card" src="<?= $carousel4; ?>" alt="carousel">
           </a>
         </div>
 
         <div aria-hidden class="group">
           <a href="https://www.frontcommun.org/">
-            <img class="card" src="images/FC-300x111.jpg" alt="carousel">
+            <img class="card" src="<?= $carousel1; ?>" alt="carousel">
           </a>
           <a href="https://fneeq.qc.ca/fr/accueil/">
-            <img class="card" src="images/NEGO_bandeau_vert-mains-300x111.jpg" alt="carousel">
+            <img class="card" src="<?= $carousel2; ?>" alt="carousel">
           </a>
           <a href="https://secteurpublic.quebec/">
-            <img class="card" src="images/bonbord-300x111.png" alt="carousel">
+            <img class="card" src="<?= $carousel3; ?>" alt="carousel">
           </a>
           <a href="https://www.nonauxhausses.org/">
-            <img class="card" src="images/logomainrougeside-2-768x284.png" alt="carousel">
+            <img class="card" src="<?= $carousel4; ?>" alt="carousel">
           </a>
         </div>
 
@@ -110,9 +114,10 @@ $the_query = new WP_Query( $args );
 
 
 
-        <a href="">
-          <!-- <img class="logo" src="images/logo/Vector.png" alt="SPPCM LOGO"> -->
-                    
+        <!--<a href="">
+              <img class="logo" src="images/logo/Vector.png" alt="SPPCM LOGO">
+            </a> -->
+
           <?php
               /**
                * Logo du site (Apparence → Personnaliser → Identité du site).
@@ -127,24 +132,22 @@ $the_query = new WP_Query( $args );
               <?php endif; 
           ?>
 
-        </a>
-
 
 
 
 
       <div class="reseauSociaux">
         <a href="https://www.csn.qc.ca/">
-          <img src="https://www.sppcm.org/wp-content/uploads/2018/03/logo_fb.png">
+          <img src="<?= $logo1; ?>">
         </a>
         <a href="https://fneeq.qc.ca/fr/accueil/">
-          <img src="images/logo/FNEEQ-logo.png">
+          <img src="<?= $logo2; ?>">
         </a>
         <a href="sppcm@cmaisonneuve.qc.ca">
-          <img src="images/logo/mail logo.png">
+          <img src="<?= $logo3; ?>">
         </a>
         <a href="https://www.facebook.com/SPPCMaisonneuve#">
-          <img src="images/logo/facebook logo.png">
+          <img src="<?= $logo4; ?>">
         </a>
       </div>
 
