@@ -1,5 +1,8 @@
 @use "../1-settings/variables" as *;
 
+a:visited {
+  color: $tertiary_color;
+}
 
 header {
   align-items: center;
@@ -11,10 +14,6 @@ header {
   height: 78px;
   overflow-x: visible;
   list-style: none;
-}
-
-header a {
-  color: $bg_color;
 }
 
 header li,
@@ -60,6 +59,7 @@ header .bouton {
   flex-direction: column;
   height: 100%;
   left: 0;
+  overflow-x: visible;
   position: fixed;
   text-align: center;
   top: 100px;
@@ -69,7 +69,7 @@ header .bouton {
   z-index: 1;
 }
 
-.navigation{
+.navigation {
   color: $tertiary_color;
 }
 
@@ -79,7 +79,7 @@ header .bouton {
   text-align: center;
 }
 
-.menu-toggle{
+.menu-toggle {
   display: none;
 }
 
@@ -93,6 +93,7 @@ header .bouton {
 
 .menu {
   margin: 0;
+  overflow-x: visible;
 }
 
 .sub-menu {
@@ -142,7 +143,8 @@ header .custom-logo {
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
     box-shadow: $icn_shadow;
-    font-size: 8px;
+    color: $light_text;
+    font-size: 16px;
     padding: 1rem;
     margin: 0;
   }
@@ -151,6 +153,8 @@ header .custom-logo {
   a {
     margin: 0;
     height: 100%;
+    overflow-x: visible;
+    list-style-type: none;
   }
 
   header ul {
@@ -159,10 +163,15 @@ header .custom-logo {
     gap: 2rem;
     margin-right: auto;
     margin-left: auto;
+    overflow-x: visible;
   }
 
   header ul .sub-menu {
     gap: 0;
+  }
+
+  .menu-menu-principal-container{
+    overflow-x: visible;
   }
 
   .bouton {
@@ -173,12 +182,17 @@ header .custom-logo {
     display: none;
   }
 
+  .menu {
+    overflow-x: visible;
+  }
+
   .navigation {
     background: none;
-    display: none;
-    height:20%;
+    display: flex;
+    height: 20%;
     left: 0;
-    position:absolute;
+    margin-top: 50px;
+    position: absolute;
     translate: 0;
     top: 0;
     z-index: 1;
@@ -188,15 +202,11 @@ header .custom-logo {
     display: none;
   }
 
-  .site-branding{
+  .site-branding {
   }
 
   .site-title {
     font-size: 40px;
-  }
-
-  .sub-menu {
-    margin-top: 2px;
   }
 
   .sub-nav > li {
@@ -205,6 +215,10 @@ header .custom-logo {
 
   header .custom-logo {
     width: 20%;
+  }
+
+  .sub-menu ul li{
+    margin-top: -16px;
   }
 
   #search-tablette {
@@ -217,4 +231,7 @@ header .custom-logo {
 /* Desktop */
 
 @media (min-width: 1024px) {
+  .menu {
+    overflow-x: visible;
+  }
 }
