@@ -54,6 +54,7 @@ header .bouton {
 .navigation {
   align-items: center;
   background-color: $bg_color;
+   background: linear-gradient(15deg,$secondary_color 59%, rgba(65, 21, 16, 1) 60%, $secondary_color 60%, $secondary_color 69%, rgba(65, 21, 16, 1) 70%, $secondary_color 70%, $secondary_color 75%, $bg_color 75%);
   color: $tertiary_color;
   display: flex;
   flex-direction: column;
@@ -63,15 +64,12 @@ header .bouton {
   position: fixed;
   text-align: center;
   top: 100px;
-  translate: 100%;
+  // translate: 100%;
   transition: translate 500ms ease-in-out;
   width: 100%;
   z-index: 1;
 }
 
-.navigation {
-  color: $tertiary_color;
-}
 
 .menu-item-has-children,
 .sub-menu {
@@ -132,21 +130,11 @@ header .custom-logo {
   }
 
   header {
+    background: linear-gradient(45deg,$secondary_color 59%, rgba(65, 21, 16, 1) 60%, $secondary_color 60%, $secondary_color 69%, rgba(65, 21, 16, 1) 70%, $secondary_color 70%, $secondary_color 75%, rgba(130, 28, 24, 0) 75%);
     display: flex;
     height: 60px;
     justify-content: top;
     gap: 2rem;
-  }
-
-  header .navigation a {
-    background-color: $color_action;
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    box-shadow: $icn_shadow;
-    color: $light_text;
-    font-size: 16px;
-    padding: 1rem;
-    margin: 0;
   }
 
   header li,
@@ -155,6 +143,10 @@ header .custom-logo {
     height: 100%;
     overflow-x: visible;
     list-style-type: none;
+  }
+
+  header li {
+    font-size: 0px;
   }
 
   header ul {
@@ -170,8 +162,31 @@ header .custom-logo {
     gap: 0;
   }
 
-  .menu-menu-principal-container{
-    overflow-x: visible;
+  header ul .sub-menu a {
+    background-color: $color_active;
+  }
+
+  header ul .sub-menu{
+   margin-top: 20px;
+  }
+
+  header ul .sub-menu li{
+   margin-top: 20px;
+  }
+  
+  header .custom-logo {
+    width: 20%;
+  }
+
+  header .navigation a {
+    background-color: $color_action;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: $icn_shadow;
+    color: $light_text;
+    font-size: 16px;
+    padding: 1rem;
+    margin: 0;
   }
 
   .bouton {
@@ -180,6 +195,10 @@ header .custom-logo {
 
   .header-droite {
     display: none;
+  }
+
+  .menu-menu-principal-container {
+    overflow-x: visible;
   }
 
   .menu {
@@ -207,18 +226,6 @@ header .custom-logo {
 
   .site-title {
     font-size: 40px;
-  }
-
-  .sub-nav > li {
-    background-color: $color_action;
-  }
-
-  header .custom-logo {
-    width: 20%;
-  }
-
-  .sub-menu ul li{
-    margin-top: -16px;
   }
 
   #search-tablette {
