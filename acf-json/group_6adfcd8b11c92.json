@@ -5,7 +5,7 @@
         {
             "key": "field_6adfcd8bad04d",
             "label": "Date de l'infolettre",
-            "name": "date-infolettre",
+            "name": "date_infolettre",
             "aria-label": "",
             "type": "date_picker",
             "instructions": "",
@@ -24,8 +24,8 @@
         },
         {
             "key": "field_6adfcdc3ad04e",
-            "label": "Résumé",
-            "name": "resume-infolettre",
+            "label": "Résumé de l'infolettre",
+            "name": "resume_infolettre",
             "aria-label": "",
             "type": "wysiwyg",
             "instructions": "",
@@ -45,8 +45,8 @@
         },
         {
             "key": "field_6adfcdd8ad04f",
-            "label": "Lien-Infolettre",
-            "name": "lien-infolettre",
+            "label": "Lien de l'Infolettre",
+            "name": "lien_infolettre",
             "aria-label": "",
             "type": "url",
             "instructions": "",
@@ -97,5 +97,5 @@
     "display_title": "",
     "allow_ai_access": false,
     "ai_description": "",
-    "modified": 1794341488
+    "modified": 1794788210
 }

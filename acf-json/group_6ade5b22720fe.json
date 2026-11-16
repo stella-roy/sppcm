@@ -5,7 +5,7 @@
         {
             "key": "field_6ade5b2346af1",
             "label": "Image",
-            "name": "comite-image",
+            "name": "comite_image",
             "aria-label": "",
             "type": "image",
             "instructions": "",
@@ -31,7 +31,7 @@
         {
             "key": "field_6ade5bca46af2",
             "label": "Nom",
-            "name": "nom-comite",
+            "name": "nom_comite",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -52,7 +52,7 @@
         {
             "key": "field_6ade5df4f4aec",
             "label": "Prénom",
-            "name": "prenom-comite",
+            "name": "prenom_comite",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -73,7 +73,7 @@
         {
             "key": "field_6ade5c4746af3",
             "label": "Rôle",
-            "name": "role-comite",
+            "name": "role_comite",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -94,7 +94,7 @@
         {
             "key": "field_6ade5c7446af4",
             "label": "Poste",
-            "name": "poste-comite",
+            "name": "poste_comite",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -115,7 +115,7 @@
         {
             "key": "field_6ade5c8e46af5",
             "label": "Description",
-            "name": "description-comite",
+            "name": "description_comite",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -127,27 +127,6 @@
                 "id": ""
             },
             "default_value": "Description",
-            "maxlength": "",
-            "allow_in_bindings": 0,
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
-            "key": "field_6ade5cb446af6",
-            "label": "",
-            "name": "",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
             "maxlength": "",
             "allow_in_bindings": 0,
             "placeholder": "",
@@ -176,5 +155,5 @@
     "display_title": "",
     "allow_ai_access": false,
     "ai_description": "",
-    "modified": 1792957971
+    "modified": 1794786705
 }
