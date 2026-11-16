@@ -4,3 +4,8 @@
 .wrapper {
     padding: 0 max(16px, 8vw);
 }
+
+.wrapper > h2 {
+    margin-bottom: $space_sm;
+    margin-top: $space_md;
+}
