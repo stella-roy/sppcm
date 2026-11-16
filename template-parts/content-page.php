@@ -10,6 +10,46 @@
 get_header();
 ?>
 
+<?php
+/* Code PHP de dynamisation */
+
+  // Prendre une infolettre (-1 = toutes)
+  $args = array(
+    'posts_per_page' => -1,
+    'post_type' => 'infolettre'
+  );
+ 
+ 
+  // Faire une demande backend
+  $the_query = new WP_Query($args);
+ 
+  //var_dump($the_query);
+ 
+  ?>
+
+  <?php
+  /* Un loop */
+
+  if ($the_query->have_posts()): ?>
+      <?php while ($the_query->have_posts()) : $the_query->the_post();
+     
+        /* Obtenir les ACF de la base de donnees */
+        $data = get_fields();
+
+        /* Champs de l'infolettre  */
+        // Le titre est la date
+        $titre_infolettre = get_the_title();
+        $resume_infolettre = $data['resume-infolettre'];
+        $lien_infolettre = $data['lien-infolettre'];
+      
+      ?>
+
+      <h3><?= $titre_infolettre ?></h3>
+
+  <?php  endwhile; ?>
+  <?php endif;
+?>
+
 <main id="primary" class="site-main">
     <div class="wrapper">
         
