@@ -14,7 +14,7 @@ main {
 }
 
 footer {
-  background: #661613;
+  background: linear-gradient(45deg, #821c18 69%, rgb(65, 21, 16) 70%, #821c18 60%, #821c18 79%, rgb(65, 21, 16) 80%, #821c18 70%, #821c18 100%, rgba(130, 28, 24, 0) 75%);
   // background-position: ;
   color: #fff;
   text-align: center;
@@ -23,6 +23,7 @@ footer {
   box-shadow: 0px -4px 11px 5px rgb(0, 0, 0, 0.5);
   overflow: hidden;
 }
+
 
 .footer-images {
  display: grid;
@@ -41,8 +42,9 @@ footer {
 
 .logo{
   height: 2rem;
-    position: relative;
-    top: 6px;
+  position: relative;
+  top: 6px;
+  filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.6));
 }
 
 
@@ -84,13 +86,30 @@ footer nav a:hover {
 
 .group img{
   height: 2rem;
+   flex-shrink: 0;
+  width: auto;
+}
+
+
+.group a {
+  display: block;
+  flex-shrink: 0;
+  margin: 0;
+  height: auto;
+  font-size: inherit;
 }
 
 .reseauSociaux{
   min-width: 0;
   display: flex;
-  gap: 1vw;
+  gap: 4vw;
   justify-content: center;
+}
+
+.reseauSociaux a {
+  margin: 0;
+  height: auto;
+  font-size: inherit;
 }
 
 .reseauSociaux img{
@@ -112,15 +131,18 @@ footer p{
 .copyright{
    font-size: 0.6rem;
    margin: 0;
-   margin-top: 1rem;
    background-color: black;
    padding: 0.5rem 0;
    text-align: center;
-
+   margin-top: 1rem;
    display: flex;
    flex-direction: column;
    justify-content: space-evenly;
    
+}
+
+.copyright div{
+  color: white;
 }
 
 .portfolio{
@@ -131,9 +153,12 @@ footer p{
 }
 
 .portfolio a{
-  color: inherit;
+  color: white;
   text-decoration: none; 
    font-size: 0.85rem;
+    margin: 0;
+  height: auto;
+  font-size: inherit;
 }
 
 .portfolio a:hover{
@@ -168,6 +193,11 @@ footer p{
     left: -9999px;
 }
 
+.post,
+.page {
+  margin: 0;
+}
+
 @keyframes spin {
   from {translate: 0;}
   to {translate: -100%;}
@@ -177,11 +207,6 @@ footer p{
 
 
 @media (min-width: 768px) {
-
-  footer{
-    background: url(./images/footer_banner/Footer_tablette.png) center no-repeat #661613;
-  background-size: cover;
-  }
   
   .footer-images{
     height: 2rem;
@@ -206,6 +231,7 @@ footer p{
 
 .copyright{
    flex-direction: row;
+   margin-top: 1.6rem;
 }
 
 .portfolio li{
@@ -216,10 +242,6 @@ footer p{
 
 @media (min-width: 1024px) {
 
-  footer{
-    background: url(./images/footer_banner/Footer_Desktop.png) center no-repeat #661613;
-  background-size: cover;
-  }
 
    .footer-images{
     height: 4rem;
