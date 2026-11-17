@@ -66,6 +66,78 @@ get_header();
         <?php endif;
         ?>
 
+        <div class="infolettre">
+            <h3><?php echo esc_html($titre_infolettre); ?></h3>
+
+            <div class="resume-contenu">
+                <?php echo wp_kses_post($resume_infolettre); ?>
+            </div>
+
+            <div class="container">
+                <button class="btn-sombre">
+                    <a href="<?php echo esc_url($lien_infolettre); ?>" target="_blank" rel="noopener noreferrer">Lire plus...</a>
+                </button>
+            </div>
+        </div>
+
+        <div class="infolettre">
+            <h3><?php echo esc_html($titre_infolettre); ?></h3>
+
+            <div class="resume-contenu">
+                <?php echo wp_kses_post($resume_infolettre); ?>
+            </div>
+
+            <div class="container">
+                <button class="btn-sombre">
+                    <a href="<?php echo esc_url($lien_infolettre); ?>" target="_blank" rel="noopener noreferrer">Lire plus...</a>
+                </button>
+            </div>
+        </div>
+        
+        <div class="infolettre">
+            <h3><?php echo esc_html($titre_infolettre); ?></h3>
+
+            <div class="resume-contenu">
+                <?php echo wp_kses_post($resume_infolettre); ?>
+            </div>
+
+            <div class="container">
+                <button class="btn-sombre">
+                    <a href="<?php echo esc_url($lien_infolettre); ?>" target="_blank" rel="noopener noreferrer">Lire plus...</a>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="infolettre">
+            <h3><?php echo esc_html($titre_infolettre); ?></h3>
+
+            <div class="resume-contenu">
+                <?php echo wp_kses_post($resume_infolettre); ?>
+            </div>
+
+            <div class="container">
+                <button class="btn-sombre">
+                    <a href="<?php echo esc_url($lien_infolettre); ?>" target="_blank" rel="noopener noreferrer">Lire plus...</a>
+                </button>
+            </div>
+        </div>
+        
+
+        <div class="infolettre">
+            <h3><?php echo esc_html($titre_infolettre); ?></h3>
+
+            <div class="resume-contenu">
+                <?php echo wp_kses_post($resume_infolettre); ?>
+            </div>
+
+            <div class="container">
+                <button class="btn-sombre">
+                    <a href="<?php echo esc_url($lien_infolettre); ?>" target="_blank" rel="noopener noreferrer">Lire plus...</a>
+                </button>
+            </div>
+        </div>
+
     </div>
 </main><!-- #main -->
 

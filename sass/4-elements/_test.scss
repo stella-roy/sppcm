@@ -52,7 +52,7 @@ ol li::before {
     content: counter(item) "."; /* Afficher le compteur suivi d'un point */
     counter-increment: item; /* Incrémenter le compteur pour chaque élément de la liste */
     flex-shrink: 0; /* Empecher le compteur de retrecir */
-    width: 1.1rem; /* Definir une largeur fixe pour le compteur */
+    width: 1.6rem; /* Definir une largeur fixe pour le compteur */
 
 }
 
