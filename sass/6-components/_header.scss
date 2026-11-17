@@ -6,7 +6,16 @@ a:visited {
 
 header {
   align-items: center;
-  background: $color_gradient;
+  background: linear-gradient(
+    65deg,
+    #3c130f 59%,
+    $tertiary_color 60%,
+    #3c130f 60%,
+    #3c130f 69%,
+    $tertiary_color 70%,
+    #3c130f 70%,
+    #3c130f 75%
+  );
   color: $bg_color;
   display: flex;
   justify-content: space-between;
@@ -53,18 +62,7 @@ header .bouton {
 
 .navigation {
   align-items: center;
-  background-color: $bg_color;
-  background: linear-gradient(
-    15deg,
-    $secondary_color 59%,
-    rgba(65, 21, 16, 1) 60%,
-    $secondary_color 60%,
-    $secondary_color 69%,
-    rgba(65, 21, 16, 1) 70%,
-    $secondary_color 70%,
-    $secondary_color 75%,
-    $bg_color 75%
-  );
+  background: $bg_color;
   color: $tertiary_color;
   display: flex;
   flex-direction: column;
@@ -90,6 +88,26 @@ header .bouton {
   display: none;
 }
 
+.menu-item-2409::after {
+  background: linear-gradient(
+    10deg,
+    $secondary_color 59%,
+    rgba(65, 21, 16, 1) 60%,
+    $secondary_color 60%,
+    $secondary_color 69%,
+    rgba(65, 21, 16, 1) 70%,
+    $secondary_color 70%,
+    $secondary_color 75%,
+    rgba(247, 235, 218, 0) 75%
+  );
+  content: "";
+  display: block;
+  height: 50%;
+  position: absolute;
+  right: 0;
+  width: 100%;
+}
+
 .ligne {
   background-color: $color_action;
   border-bottom-right-radius: 50px;
@@ -112,16 +130,47 @@ header .bouton {
   display: block;
 }
 
+.cc-search:checked ~ form {
+  display: block;
+}
+
+.search-bar {
+  overflow-x: visible;
+}
+
+.search-form {
+  align-items: center;
+  display: none;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.search-form input[type="search"] {
+  background: #fff;
+  border: 2px solid $secondary_color;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: #333;
+  display: block;
+  font-size: 1rem;
+  height: 40px;
+  min-width: 250px;
+  padding: 0 1rem;
+}
+
 .site-title {
   display: none;
 }
 
 header .custom-logo {
   width: 30%;
+  display: flex;
 }
 
 #search-mobile {
   color: $color_action;
+  overflow-x: visible;
   transform: scaleX(-1);
   scale: 1.5;
 }
@@ -143,12 +192,11 @@ header .custom-logo {
     background: linear-gradient(
       45deg,
       $secondary_color 59%,
-      rgba(65, 21, 16, 1) 60%,
+      $tertiary_color 60%,
       $secondary_color 60%,
       $secondary_color 69%,
-      rgba(65, 21, 16, 1) 70%,
+      $tertiary_color 70%,
       $secondary_color 70%,
-      $secondary_color 75%,
       rgba(130, 28, 24, 0) 75%
     );
     display: flex;
@@ -172,7 +220,7 @@ header .custom-logo {
   header ul {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 1.5rem;
     margin-right: auto;
     margin-left: auto;
     overflow-x: visible;
@@ -191,11 +239,18 @@ header .custom-logo {
   }
 
   header ul .sub-menu li {
-    margin-top: 2%;
+    margin-top: 3%;
   }
 
   header .custom-logo-link {
-    width: 10%;
+    display: flex;
+    align-items: center;
+    padding: 1%;
+    width: 15%;
+  }
+
+  header .custom-logo {
+    width: 100%;
   }
 
   header .navigation a {
@@ -204,12 +259,12 @@ header .custom-logo {
     border-bottom-right-radius: 20px;
     box-shadow: $icn_shadow;
     color: $light_text;
-    font-size: 16px;
+    font-size: 10px;
     padding: 0.5rem 1.5rem;
     margin: 0;
   }
 
-  header .navigation a:hover{
+  header .navigation a:hover {
     text-decoration: underline;
   }
 
@@ -229,12 +284,17 @@ header .custom-logo {
     overflow-x: visible;
   }
 
+  .menu-item-2409::after {
+    background: none;
+  }
+
   .navigation {
     background: none;
     display: flex;
     height: 20%;
     left: 0;
-    position:fixed;
+    position: absolute;
+    top: 10%;
     translate: 0;
     z-index: 1;
   }
@@ -244,17 +304,20 @@ header .custom-logo {
   }
 
   .site-branding {
+    align-items: center;
     display: flex;
     flex-direction: row;
+    height: 100%;
+    margin-left: 3%;
   }
 
   .site-title {
     display: flex;
     margin-bottom: 0;
-    width: 50%;
+    width: 35%;
   }
 
-  .site-title a{
+  .site-title a {
     font-size: 10px;
   }
 
@@ -268,7 +331,15 @@ header .custom-logo {
 /* Desktop */
 
 @media (min-width: 1024px) {
-  .menu {
+
+  header .navigation a {
+    font-size: 16px;
+  }
+    .menu {
     overflow-x: visible;
+  }
+
+  .site-title a {
+    font-size: 16px;
   }
 }

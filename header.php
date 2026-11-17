@@ -19,9 +19,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search"
-    />
+		rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
 
 	<?php wp_head(); ?>
 </head>
@@ -53,7 +52,9 @@
 			</div><!-- .site-branding -->
 
 			<div class="header-droite">
-				<span class="material-symbols-outlined" id="search-mobile">search</span>
+				<label for="search" class="search-bar">
+					<span class="material-symbols-outlined" id="search-mobile">search</span>
+				</label>
 				<label for="burger" class="bouton">
 					<div class="ligne ligne1"></div>
 					<div class="ligne ligne2"></div>
@@ -61,12 +62,15 @@
 				</label>
 			</div>
 			<input type="checkbox" id="burger" class="cc-burger" />
+			<input type="checkbox" id="search" class="cc-search" />
 
 			<nav id="site-navigation" class="navigation">
+				<?php get_search_form(); ?>
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e('Primary Menu', 'underscores'); ?></button>
 				<?php
 				wp_nav_menu(
 					array(
+
 						'theme_location' => 'menu-1',
 						'menu_id'        => 'primary-menu',
 					)
