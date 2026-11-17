@@ -71,7 +71,7 @@ header .bouton {
   overflow-x: visible;
   position: fixed;
   text-align: center;
-  top: 100px;
+  top: 125px;
   translate: 100%;
   transition: translate 500ms ease-in-out;
   width: 100%;
@@ -102,7 +102,7 @@ header .bouton {
   );
   content: "";
   display: block;
-  height: 50%;
+  height: 40%;
   position: absolute;
   right: 0;
   width: 100%;
@@ -130,9 +130,9 @@ header .bouton {
   display: block;
 }
 
-.cc-search:checked ~ form {
-  display: block;
-}
+// .cc-search:checked ~ form {
+//   display: block;
+// }
 
 .search-bar {
   overflow-x: visible;
@@ -140,7 +140,7 @@ header .bouton {
 
 .search-form {
   align-items: center;
-  display: none;
+  display: flex;
   justify-content: center;
   gap: 0.5rem;
   padding: 1rem;
@@ -303,6 +303,10 @@ header .custom-logo {
   }
 
   .navigation hr {
+    display: none;
+  }
+
+  .search-form{
     display: none;
   }
 
