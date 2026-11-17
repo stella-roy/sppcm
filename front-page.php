@@ -149,7 +149,7 @@ endif;
 
         <div class="actualités">
             <!-- Titre -->
-            <h2><?php echo esc_html($titre_actualites_accueil); ?></h2>
+            <h1><?php echo esc_html($titre_actualites_accueil); ?></h1>
 
             <div class="articles">
                 <!-- Articles -->
@@ -162,7 +162,10 @@ endif;
                                 <?php echo get_the_date('d F Y'); ?>
                             </div>
                             <p>
-                                <?php echo wp_trim_words(get_the_excerpt(), 20, '...'); ?>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Sed euismod, nunc ut laoreet tincidunt, nunc nisl aliquam nunc, 
+                                eget aliquam nisl nunc eget nunc. Sed euismod, 
+                                nunc ut laoreet tincidunt, nunc nisl aliquam nunc, eget aliquam nisl nunc eget nunc.
                             </p>
                             <div class="container">
                                 <button onclick="window.location.href='<?php the_permalink(); ?>'">Lire plus...</button>
