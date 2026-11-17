@@ -6,31 +6,31 @@
 
         <div class="group">
           <a href="https://www.frontcommun.org/">
-            <img class="card" src="<?= $carousel1; ?>" alt="carousel">
+            <img class="card" src="<= $carousel1; ?>" alt="carousel">
           </a>
           <a href="https://fneeq.qc.ca/fr/accueil/">
-            <img class="card" src="<?= $carousel2; ?>" alt="carousel">
+            <img class="card" src="<= $carousel2; ?>" alt="carousel">
           </a>
           <a href="https://secteurpublic.quebec/">
-            <img class="card" src="<?= $carousel3; ?>" alt="carousel">
+            <img class="card" src="<= $carousel3; ?>" alt="carousel">
           </a>
           <a href="https://www.nonauxhausses.org/">
-            <img class="card" src="<?= $carousel4; ?>" alt="carousel">
+            <img class="card" src="<= $carousel4; ?>" alt="carousel">
           </a>
         </div>
 
         <div aria-hidden class="group">
           <a href="https://www.frontcommun.org/">
-            <img class="card" src="<?= $carousel1; ?>" alt="carousel">
+            <img class="card" src="<= $carousel1; ?>" alt="carousel">
           </a>
           <a href="https://fneeq.qc.ca/fr/accueil/">
-            <img class="card" src="<?= $carousel2; ?>" alt="carousel">
+            <img class="card" src="<= $carousel2; ?>" alt="carousel">
           </a>
           <a href="https://secteurpublic.quebec/">
-            <img class="card" src="<?= $carousel3; ?>" alt="carousel">
+            <img class="card" src="<= $carousel3; ?>" alt="carousel">
           </a>
           <a href="https://www.nonauxhausses.org/">
-            <img class="card" src="<?= $carousel4; ?>" alt="carousel">
+            <img class="card" src="<= $carousel4; ?>" alt="carousel">
           </a>
         </div>-->
 
@@ -40,7 +40,7 @@
   <?php
     // args
     $args = array(
-        'posts_per_page' => -1,
+        'posts_per_page' => 1,
         'post_type'  => 'lien-externe',
     );
 
@@ -71,9 +71,28 @@
                 <a href="http://localhost/sppcm_5w5/lien-externe/coalition-main-rouge/" target="_blank" rel="noopener noreferrer">
                   <img class="card" src="http://localhost/sppcm_5w5/wp-content/uploads/2026/11/logomainrougeside-2-768x284-1-300x111.png" alt="" />
                 </a>
-              <?php endwhile; ?>
+
+              
             </div>
 
+            <div aria-hidden class="group">
+              
+                
+                <a href="http://localhost/sppcm_5w5/lien-externe/8081/" target="_blank" rel="noopener noreferrer">
+                  <img class="card" src="http://localhost/sppcm_5w5/wp-content/uploads/2026/11/FC-300x111-1.jpg" alt="" />
+                </a>
+                <a href="http://localhost/sppcm_5w5/lien-externe/fneeq/" target="_blank" rel="noopener noreferrer">
+                  <img class="card" src="http://localhost/sppcm_5w5/wp-content/uploads/2026/11/NEGO_bandeau_vert-mains-300x111-1.jpg" alt="" />
+                </a>
+                <a href="http://localhost/sppcm_5w5/lien-externe/lkjnkjkj/" target="_blank" rel="noopener noreferrer">
+                  <img class="card" src="http://localhost/sppcm_5w5/wp-content/uploads/2026/11/bonbord-300x111-1.png" alt="" />
+                </a>
+                <a href="http://localhost/sppcm_5w5/lien-externe/coalition-main-rouge/" target="_blank" rel="noopener noreferrer">
+                  <img class="card" src="http://localhost/sppcm_5w5/wp-content/uploads/2026/11/logomainrougeside-2-768x284-1-300x111.png" alt="" />
+                </a>
+
+              <?php endwhile; ?>
+            </div>
            
           </div>
     <?php endif; ?>
