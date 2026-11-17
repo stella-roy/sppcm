@@ -37,38 +37,21 @@
       
 
 <div class="footer-images">
-  <?php
-    // args
-    $args = array(
-        'posts_per_page' => 1,
-        'post_type'  => 'lien-externe',
-    );
-
-    // query
-    $the_query = new WP_Query( $args );
-
-    //var_dump( $the_query );
-    ?>
-
-    <?php if( $the_query->have_posts() ): ?>
+  
         <div class="carousel">
 
             <div class="group">
-              <?php while( $the_query->have_posts() ) : $the_query->the_post(); 
-
-                // récupérer les valeurs pour chaque lien externe
               
-                ?>
-                <a href="http://localhost/sppcm_5w5/lien-externe/8081/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.frontcommun.org/" target="_blank" rel="noopener noreferrer">
                   <img class="card" src="http://localhost/sppcm_5w5/wp-content/uploads/2026/11/FC-300x111-1.jpg" alt="" />
                 </a>
-                <a href="http://localhost/sppcm_5w5/lien-externe/fneeq/" target="_blank" rel="noopener noreferrer">
+                <a href="https://fneeq.qc.ca/fr/accueil/" target="_blank" rel="noopener noreferrer">
                   <img class="card" src="http://localhost/sppcm_5w5/wp-content/uploads/2026/11/NEGO_bandeau_vert-mains-300x111-1.jpg" alt="" />
                 </a>
-                <a href="http://localhost/sppcm_5w5/lien-externe/lkjnkjkj/" target="_blank" rel="noopener noreferrer">
+                <a href="https://secteurpublic.quebec/" target="_blank" rel="noopener noreferrer">
                   <img class="card" src="http://localhost/sppcm_5w5/wp-content/uploads/2026/11/bonbord-300x111-1.png" alt="" />
                 </a>
-                <a href="http://localhost/sppcm_5w5/lien-externe/coalition-main-rouge/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.nonauxhausses.org/" target="_blank" rel="noopener noreferrer">
                   <img class="card" src="http://localhost/sppcm_5w5/wp-content/uploads/2026/11/logomainrougeside-2-768x284-1-300x111.png" alt="" />
                 </a>
 
@@ -77,25 +60,24 @@
 
             <div aria-hidden class="group">
               
-                
-                <a href="http://localhost/sppcm_5w5/lien-externe/8081/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.frontcommun.org/" target="_blank" rel="noopener noreferrer">
                   <img class="card" src="http://localhost/sppcm_5w5/wp-content/uploads/2026/11/FC-300x111-1.jpg" alt="" />
                 </a>
-                <a href="http://localhost/sppcm_5w5/lien-externe/fneeq/" target="_blank" rel="noopener noreferrer">
+                <a href="https://fneeq.qc.ca/fr/accueil/" target="_blank" rel="noopener noreferrer">
                   <img class="card" src="http://localhost/sppcm_5w5/wp-content/uploads/2026/11/NEGO_bandeau_vert-mains-300x111-1.jpg" alt="" />
                 </a>
-                <a href="http://localhost/sppcm_5w5/lien-externe/lkjnkjkj/" target="_blank" rel="noopener noreferrer">
+                <a href="https://secteurpublic.quebec/" target="_blank" rel="noopener noreferrer">
                   <img class="card" src="http://localhost/sppcm_5w5/wp-content/uploads/2026/11/bonbord-300x111-1.png" alt="" />
                 </a>
-                <a href="http://localhost/sppcm_5w5/lien-externe/coalition-main-rouge/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.nonauxhausses.org/" target="_blank" rel="noopener noreferrer">
                   <img class="card" src="http://localhost/sppcm_5w5/wp-content/uploads/2026/11/logomainrougeside-2-768x284-1-300x111.png" alt="" />
                 </a>
 
-              <?php endwhile; ?>
+              
             </div>
            
           </div>
-    <?php endif; ?>
+  
  
     <a href="http://localhost/sppcm_5w5/">
       <img class="logo" src="http://localhost/sppcm_5w5/wp-content/uploads/2018/02/cropped-cropped-sppcm_logo_rgb-1.png" alt="SPPCM LOGO">
