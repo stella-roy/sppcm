@@ -196,8 +196,11 @@ header .custom-logo {
       $secondary_color 60%,
       $secondary_color 69%,
       $tertiary_color 70%,
-      $secondary_color 70%,
-      rgba(130, 28, 24, 0) 75%
+    $secondary_color 70%,
+    $secondary_color 75%,
+    rgba(255, 0, 0, 0) 75%,
+    rgba(129, 27, 24, 0.40) 75%,
+    rgba(130, 27, 23, 0.40) 100%
     );
     display: flex;
     height: 60px;
