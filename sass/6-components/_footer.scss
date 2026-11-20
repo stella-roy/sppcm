@@ -61,7 +61,6 @@ footer nav a:hover {
 
 .carousel{
   display: flex;
-  overflow: hidden;
   min-width: 0;
   width: 60%;
   max-width: 450px;        
@@ -83,11 +82,11 @@ footer nav a:hover {
   gap: 1em;
   animation: spin 40s infinite linear;
   padding-right: 1em;
+  overflow: visible;
 }
 
 .group img{
   height: 2rem;
-   flex-shrink: 0;
   width: auto;
 }
 
