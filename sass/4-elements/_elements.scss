@@ -14,6 +14,33 @@ a:visited {
     text-decoration: none;
 }
 
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(247, 235, 218);
+}
+
+button {
+    background-color: $primary_color;
+    border: none;
+    border-radius: $btn_shape;
+    box-shadow: $icn_shadow;
+    color: $light_text;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: $font_bold;
+    margin-top: 9px;
+    padding: 8px 15px;
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+button:hover {
+    transform: scale(1.08); /* Agrandit le bouton de 8% */
+  
+}
+
 button a {
     margin: 0;
 }
@@ -34,6 +61,7 @@ h3 {
 main {
     background-color: $bg_color;
     font-family: $font;
+    flex: 1;
 }
 
 ol {
@@ -62,4 +90,11 @@ ol, ul {
 
 p {
     font-size: $fs_md;
+}
+
+/* Style de tailles tablette */
+@media screen and (min-width: 768px) {
+  
+    button {font-size: 18px;}
+
 }

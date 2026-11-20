@@ -1,38 +1,38 @@
 @use '../1-settings/variables' as *;
 
 .actualités {
-    width: auto;
-    padding: 10px;
     margin-left: auto;
     margin-right: auto;
+    padding: 10px;
+    width: auto;
 }
 
 .actualités h1 {
     display: block;
-    text-align: center;
     margin-bottom: 15px;
+    text-align: center;
 }
 .actualités h2 {
     display: block;
-    text-align: left;
     margin-bottom: 8px;
     margin-top: 8px;
+    text-align: left;
 }
 
 .article {
-    width: 100%;
+    border-bottom: 1px solid #d9d9d9;
     margin-bottom: 15px;
     padding-bottom: 12px;
-    border-bottom: 1px solid #d9d9d9;
+    width: 100%;
 }
 
 .article h2 {font-size: 17px;}
 
 .article-image {
-    width: 100%;
-    height: 150px;
     background-color: #d9d9d9;
+    height: 150px;
     margin-bottom: 25px;
+    width: 100%;
 }
 
 .article p {
@@ -42,23 +42,9 @@
 
 .articles {
     display: grid;
-    grid-template-columns: 1fr;
     gap: 20px;
+    grid-template-columns: 1fr;
 }
-
-button {
-    background-color: $primary_color;
-    border: none;
-    border-radius: 20px;
-    color: $light_text;
-    font-size: 13px;
-    font-weight: $font_bold;
-    margin-top: 9px;
-    margin-bottom: 4px;
-    padding: 8px 15px;
-}
-
-.container {text-align: right;}
 
 .date {
     font-size: 11px;
@@ -82,8 +68,6 @@ button {
     }
 
     .articles p {font-size: 15px;}
-    
-    button {font-size: 18px;}
 
     .date {font-size: 15px;}
     // .actualités h2 {
@@ -108,13 +92,11 @@ button {
     // }
 
     .articles {
-        grid-template-columns: auto auto auto;
         gap: 100px;
+        grid-template-columns: auto auto auto;
     }
 
     .articles p {font-size: 17px;}
-    
-    button {font-size: 18px;}
 
     .date {font-size: 15px;}
 }
