@@ -68,7 +68,7 @@ footer nav a:hover {
   margin-left: 1rem;              
   margin-right: 1rem;
   height: 160%;            
-  
+
 }
 
 .carousel::-webkit-scrollbar{
@@ -92,11 +92,17 @@ footer nav a:hover {
 
 
 .group a {
-  display: block;
+  display: flex;
+  flex-direction: column;   
+  align-items: center;
+  gap: 0.25rem;
   flex-shrink: 0;
   margin: 0;
   height: auto;
-  font-size: inherit;
+  font-size: 0.6rem;        
+  white-space: nowrap;     
+  color: #f7ebda;
+   font-weight: bold;
 }
 
 .reseauSociaux{
