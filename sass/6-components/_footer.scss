@@ -112,6 +112,11 @@ footer p {
   height: auto;
   margin: 0;       
   white-space: nowrap;
+  
+}
+
+.group p{
+  margin-bottom: 0rem;
 }
 
 .group img{
@@ -191,6 +196,8 @@ footer p {
   
   .footer-images{
     height: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
   }
 
   .footer-images img {

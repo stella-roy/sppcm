@@ -44,19 +44,19 @@
               
                 <a href="https://www.frontcommun.org/" target="_blank" rel="noopener noreferrer">
                   <img class="card" src="http://localhost/sppcm_5w5/wp-content/uploads/2026/11/FC-300x111-1.jpg" alt="" />
-                  Front commun
+                  <p>Front commun</p> 
                 </a>
                 <a href="https://fneeq.qc.ca/fr/accueil/" target="_blank" rel="noopener noreferrer">
                   <img class="card" src="http://localhost/sppcm_5w5/wp-content/uploads/2026/11/NEGO_bandeau_vert-mains-300x111-1.jpg" alt="" />
-                  FNEEQ
+                  <p>FNEEQ</p>
                 </a>
                 <a href="https://secteurpublic.quebec/" target="_blank" rel="noopener noreferrer">
                   <img class="card" src="http://localhost/sppcm_5w5/wp-content/uploads/2026/11/bonbord-300x111-1.png" alt="" />
-                  Le secteur public CSN
+                  <p>Le secteur public CSN</p>
                 </a>
                 <a href="https://www.nonauxhausses.org/" target="_blank" rel="noopener noreferrer">
                   <img class="card" src="http://localhost/sppcm_5w5/wp-content/uploads/2026/11/logomainrougeside-2-768x284-1-300x111.png" alt="" />
-                  Coalition Main Rouge
+                  <p>Coalition Main Rouge</p>
                 </a>
 
             </div>
@@ -65,19 +65,19 @@
               
                 <a href="https://www.frontcommun.org/" target="_blank" rel="noopener noreferrer">
                   <img class="card" src="http://localhost/sppcm_5w5/wp-content/uploads/2026/11/FC-300x111-1.jpg" alt="" />
-                  Front commun
+                  <p>Front commun</p> 
                 </a>
                 <a href="https://fneeq.qc.ca/fr/accueil/" target="_blank" rel="noopener noreferrer">
                   <img class="card" src="http://localhost/sppcm_5w5/wp-content/uploads/2026/11/NEGO_bandeau_vert-mains-300x111-1.jpg" alt="" />
-                  FNEEQ
+                  <p>FNEEQ</p>
                 </a>
                 <a href="https://secteurpublic.quebec/" target="_blank" rel="noopener noreferrer">
                   <img class="card" src="http://localhost/sppcm_5w5/wp-content/uploads/2026/11/bonbord-300x111-1.png" alt="" />
-                  Le secteur public CSN
+                  <p>Le secteur public CSN</p>
                 </a>
                 <a href="https://www.nonauxhausses.org/" target="_blank" rel="noopener noreferrer">
                   <img class="card" src="http://localhost/sppcm_5w5/wp-content/uploads/2026/11/logomainrougeside-2-768x284-1-300x111.png" alt="" />
-                  Coalition Main Rouge
+                  <p>Coalition Main Rouge</p>
                 </a>
               
             </div>
