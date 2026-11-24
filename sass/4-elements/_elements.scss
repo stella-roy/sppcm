@@ -51,7 +51,7 @@ h1 {
 
 h2 {
     font-size: $fs_xl;
-    text-align: center;
+    // text-align: center;
 }
 
 h3 {
@@ -90,6 +90,10 @@ ol, ul {
 
 p {
     font-size: $fs_md;
+}
+
+section {
+    padding: 1rem 1.5rem 2rem; /* Espace pour que l'ombre ne soit pas coupee */
 }
 
 /* Style de tailles tablette */

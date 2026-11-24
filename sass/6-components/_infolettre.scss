@@ -23,6 +23,7 @@
     box-shadow: $rnd-shadow;
     color: $light-text;
     margin: 20px;
+    margin-left: -0.5rem; /* Ajuste l'alignement pour ne pas couper le contenu avec le parent (section) */
 
     // soustrait 6px en bas et 6px en haut pour le container du btn Lire plus
     padding: 24px 26px 18px 32px;
