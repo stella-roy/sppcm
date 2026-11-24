@@ -124,7 +124,7 @@ header .bouton {
 }
 
 .sub-menu {
-  // display: none;
+  display: none;
 }
 
 .menu-item:hover .sub-menu {
@@ -207,7 +207,7 @@ header .custom-logo {
       url(http://localhost/sppcm/wp-content/uploads/2026/11/Wd9mu_tT1dFpJX-300x139.jpg)
         no-repeat right;
     display: flex;
-    height: 60px;
+    height: auto;
     justify-content: top;
     gap: 2rem;
   }
@@ -266,6 +266,7 @@ header .custom-logo {
     box-shadow: $icn_shadow;
     color: $light_text;
     font-size: 10px;
+    height: 30%;
     padding: 0.5rem 1.5rem;
     margin: 0;
   }
@@ -329,6 +330,11 @@ header .custom-logo {
   }
 
   .site-title a {
+    font-size: 10px;
+  }
+
+  .site-title a:visited {
+    color: $light_text;
     font-size: 10px;
   }
 
