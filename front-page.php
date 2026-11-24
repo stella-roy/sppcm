@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The main template file
  *
@@ -116,8 +117,10 @@ endif;
             // Ajout des paramètres du lecteur Youtube
             $params = array(
                 'autoplay' => 1,
-                'mute'     => 1,
-                'rel'      => 0,
+                'loop' => 1,
+                'mute' => 1,
+                'controls' => 0,
+                'rel'  => 0,
             );
             $nvl_src = add_query_arg($params, $src);
             $url_video_accueil = str_replace($src, $nvl_src, $url_video_accueil);
@@ -155,20 +158,22 @@ endif;
                 <!-- Articles -->
                 <?php if ($feedzy_query->have_posts()) : ?>
                     <?php while ($feedzy_query->have_posts()) : $feedzy_query->the_post(); ?>
+                        <?php
+                        // Récupérer le lien d'origine Feedzy (avec le permalien en secours)
+                        $feedzy_url = get_post_meta(get_the_ID(), 'feedzy_item_url', true);
+                        $lien_article = !empty($feedzy_url) ? $feedzy_url : get_permalink();
+
+                        // Récupérer
+                        ?>
                         <div class="article">
-                            <div class="article-image" style="background-image: url('<?php echo esc_url(get_the_post_thumbnail_url(get_the_ID(), 'medium_large')); ?>');"></div>
                             <h2><?php the_title(); ?></h2>
                             <div class="date">
                                 <?php echo get_the_date('d F Y'); ?>
                             </div>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Sed euismod, nunc ut laoreet tincidunt, nunc nisl aliquam nunc, 
-                                eget aliquam nisl nunc eget nunc. Sed euismod, 
-                                nunc ut laoreet tincidunt, nunc nisl aliquam nunc, eget aliquam nisl nunc eget nunc.
-                            </p>
                             <div class="container">
-                                <button onclick="window.location.href='<?php the_permalink(); ?>'">Lire plus...</button>
+                                <button onclick="window.open('<?php echo esc_url($lien_article); ?>', '_blank', 'noopener,noreferrer')">
+                                    Lire plus...
+                                </button>
                             </div>
                         </div>
                     <?php endwhile; ?>
