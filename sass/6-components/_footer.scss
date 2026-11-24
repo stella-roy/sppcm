@@ -27,6 +27,9 @@ footer {
   width: auto;
 }
 
+footer a:visited{
+  color: none;
+}
 
 .logo{
   filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.6));
@@ -50,12 +53,11 @@ footer nav a:hover {
   display: flex;
   min-width: 0;
   width: 60%;
-  max-width: 450px;        
   justify-self: center;    
   margin-left: 1rem;              
   margin-right: 1rem;
   height: 160%;            
-
+   overflow: hidden;
 }
 
 .carousel::-webkit-scrollbar{
@@ -70,6 +72,12 @@ footer nav a:hover {
   justify-content: center;
   padding-right: 1em;
   overflow: visible;
+  flex-shrink: 0;     
+  min-width: 100%;
+  justify-content: space-around; 
+}
+
+.group:nth-child(2){
 }
 
 .group img{
