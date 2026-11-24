@@ -44,40 +44,45 @@
               
                 <a href="https://www.frontcommun.org/" target="_blank" rel="noopener noreferrer">
                   <img class="card" src="http://localhost/sppcm_5w5/wp-content/uploads/2026/11/FC-300x111-1.jpg" alt="" />
+                  Front commun
                 </a>
                 <a href="https://fneeq.qc.ca/fr/accueil/" target="_blank" rel="noopener noreferrer">
                   <img class="card" src="http://localhost/sppcm_5w5/wp-content/uploads/2026/11/NEGO_bandeau_vert-mains-300x111-1.jpg" alt="" />
+                  FNEEQ
                 </a>
                 <a href="https://secteurpublic.quebec/" target="_blank" rel="noopener noreferrer">
                   <img class="card" src="http://localhost/sppcm_5w5/wp-content/uploads/2026/11/bonbord-300x111-1.png" alt="" />
+                  Le secteur public CSN
                 </a>
                 <a href="https://www.nonauxhausses.org/" target="_blank" rel="noopener noreferrer">
                   <img class="card" src="http://localhost/sppcm_5w5/wp-content/uploads/2026/11/logomainrougeside-2-768x284-1-300x111.png" alt="" />
+                  Coalition Main Rouge
                 </a>
 
-              
             </div>
 
             <div aria-hidden class="group">
               
                 <a href="https://www.frontcommun.org/" target="_blank" rel="noopener noreferrer">
                   <img class="card" src="http://localhost/sppcm_5w5/wp-content/uploads/2026/11/FC-300x111-1.jpg" alt="" />
+                  Front commun
                 </a>
                 <a href="https://fneeq.qc.ca/fr/accueil/" target="_blank" rel="noopener noreferrer">
                   <img class="card" src="http://localhost/sppcm_5w5/wp-content/uploads/2026/11/NEGO_bandeau_vert-mains-300x111-1.jpg" alt="" />
+                  FNEEQ
                 </a>
                 <a href="https://secteurpublic.quebec/" target="_blank" rel="noopener noreferrer">
                   <img class="card" src="http://localhost/sppcm_5w5/wp-content/uploads/2026/11/bonbord-300x111-1.png" alt="" />
+                  Le secteur public CSN
                 </a>
                 <a href="https://www.nonauxhausses.org/" target="_blank" rel="noopener noreferrer">
                   <img class="card" src="http://localhost/sppcm_5w5/wp-content/uploads/2026/11/logomainrougeside-2-768x284-1-300x111.png" alt="" />
+                  Coalition Main Rouge
                 </a>
-
               
             </div>
            
           </div>
-  
  
     <a href="http://localhost/sppcm_5w5/">
       <img class="logo" src="http://localhost/sppcm_5w5/wp-content/uploads/2018/02/cropped-cropped-sppcm_logo_rgb-1.png" alt="SPPCM LOGO">
@@ -101,16 +106,16 @@
 
 
       <div class="reseauSociaux">
-        <a href="https://www.csn.qc.ca/">
+        <a href="https://www.csn.qc.ca/" target="_blank" rel="noopener noreferrer">
           <img src="http://localhost/sppcm_5w5/wp-content/uploads/2026/11/csnLogo.png">
         </a>
-        <a href="http://localhost/sppcm_5w5/lien-reseau/fneeq/">
+        <a href="https://fneeq.qc.ca/fr/accueil/" target="_blank" rel="noopener noreferrer">
           <img src="http://localhost/sppcm_5w5/wp-content/uploads/2026/11/FNEEQ-logo.png">
         </a>
-        <a href="sppcm@cmaisonneuve.qc.ca">
+        <a href="mailto:sppcm@cmaisonneuve.qc.ca" target="_blank" rel="noopener noreferrer">
           <img src="http://localhost/sppcm_5w5/wp-content/uploads/2026/11/mail-logo.png">
         </a>
-        <a href="https://www.facebook.com/SPPCMaisonneuve#">
+        <a href="https://www.facebook.com/SPPCMaisonneuve#" target="_blank" rel="noopener noreferrer">
           <img src="http://localhost/sppcm_5w5/wp-content/uploads/2026/11/facebook-logo.png">
         </a>
       </div>
@@ -130,11 +135,11 @@
       <!-- <p> Copyright &copy; 2026 SPPCM - Tous droits réservés.</p> -->
 
       <ul class="portfolio">
-        <li><a href="https://www.behance.net/stellaroy2">Stella Roy</a></li>
-        <li><a href="https://linktr.ee/thomasguenette">Thomas Guenette</a></li>
-        <li><a href="https://www.behance.net/wichardjean-ba2">Wichardson Jean-Baptiste</a></li>
-        <li><a href="https://www.artstation.com/tilidia">Yasmine Guezi</a></li>
-        <li><a href="https://www.behance.net/xavierrmy1">Xavier Rémy</a></li>
+        <li><a href="https://www.behance.net/stellaroy2" target="_blank" rel="noopener noreferrer">Stella Roy</a></li>
+        <li><a href="https://linktr.ee/thomasguenette" target="_blank" rel="noopener noreferrer">Thomas Guenette</a></li>
+        <li><a href="https://www.behance.net/wichardjean-ba2" target="_blank" rel="noopener noreferrer">Wichardson Jean-Baptiste</a></li>
+        <li><a href="https://www.artstation.com/tilidia" target="_blank" rel="noopener noreferrer">Yasmine Guezi</a></li>
+        <li><a href="https://www.behance.net/xavierrmy1" target="_blank" rel="noopener noreferrer">Xavier Rémy</a></li>
       </ul>
 
     </div>

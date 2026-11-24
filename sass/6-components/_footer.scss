@@ -48,15 +48,14 @@ footer nav a:hover {
 
 .carousel{
   display: flex;
-  height: 160%;
-  justify-self: center;  
-  max-width: 450px;
-  min-width: 0;  
-  overflow: hidden; 
+  min-width: 0;
+  width: 60%;
+  max-width: 450px;        
+  justify-self: center;    
   margin-left: 1rem;              
   margin-right: 1rem;
-  width: 60%;         
-  
+  height: 160%;            
+
 }
 
 .carousel::-webkit-scrollbar{
@@ -70,21 +69,27 @@ footer nav a:hover {
   gap: 1em;
   justify-content: center;
   padding-right: 1em;
+  overflow: visible;
 }
 
 .group img{
   height: 2rem;
-   flex-shrink: 0;
   width: auto;
 }
 
 
 .group a {
-  display: block;
+  display: flex;
+  flex-direction: column;   
+  align-items: center;
+  gap: 0.25rem;
   flex-shrink: 0;
   margin: 0;
   height: auto;
-  font-size: inherit;
+  font-size: 0.6rem;        
+  white-space: nowrap;     
+  color: #f7ebda;
+   font-weight: bold;
 }
 
 .reseauSociaux{
