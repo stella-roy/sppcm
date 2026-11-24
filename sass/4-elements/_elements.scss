@@ -93,7 +93,8 @@ p {
 }
 
 section {
-    padding: 1rem 1.5rem 2rem; /* Espace pour que l'ombre ne soit pas coupee */
+    /* Technique interne de suppression d'une marge de gauche */
+    padding: 1rem 1.5rem 2rem; /* Espace pour garder les ombres */
 }
 
 /* Style de tailles tablette */

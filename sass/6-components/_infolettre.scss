@@ -23,6 +23,8 @@
     box-shadow: $rnd-shadow;
     color: $light-text;
     margin: 20px;
+
+    /* technique IA margin-left, pour aligner qqch avec un margin de box-shadow avec tout ce qui est dans un parent */
     margin-left: -0.5rem; /* Ajuste l'alignement pour ne pas couper le contenu avec le parent (section) */
 
     // soustrait 6px en bas et 6px en haut pour le container du btn Lire plus
