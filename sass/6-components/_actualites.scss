@@ -51,7 +51,7 @@
     margin-bottom: 5px;
 }
 
-img {
+.prof-image {
         position: absolute;
         left: 0;
         width: 100%;
@@ -81,16 +81,16 @@ img {
 
     .date {font-size: 15px;}
     
-    img {
-        position: absolute;
-        left: 0;
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        display: block;
-        z-index: 1;
-        margin-bottom: 20px;
-    }
+    // .prof-image {
+    //     position: absolute;
+    //     left: 0;
+    //     width: 100%;
+    //     max-width: 100%;
+    //     height: auto;
+    //     display: block;
+    //     z-index: 1;
+    //     margin-bottom: 20px;
+    // }
 }
 
 /*Ordi*/
@@ -111,15 +111,15 @@ img {
 
     .date {font-size: 15px;}
 
-    img {
-        position: absolute;
-        left: 0;
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        display: block;
-        z-index: 1;
-    }
+    // .prof-image {
+    //     position: absolute;
+    //     left: 0;
+    //     width: 100%;
+    //     max-width: 100%;
+    //     height: auto;
+    //     display: block;
+    //     z-index: 1;
+    // }
 }
 //Page actualités
 body {

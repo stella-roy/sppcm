@@ -148,7 +148,7 @@ endif;
         </div>
 
         <section>
-            <img src="wp-content/themes/underscores-child/sass/6-components/Group 170.png" alt="Prof">
+            <img class="prof-image" src="wp-content/themes/underscores-child/sass/6-components/Group 170.png" alt="Prof">
         </section>
         
         <div class="actualités">
