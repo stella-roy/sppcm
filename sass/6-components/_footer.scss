@@ -30,6 +30,10 @@ footer p {
   font-size: 0.85rem;
 }
 
+footer .logo{
+  transform: translate(0rem, -23%);
+}
+
 .card {
   align-content: center;
   border-radius: 6px;
@@ -228,6 +232,10 @@ footer p {
   .copyright{
     flex-direction: row;
     font-size:  0.7rem;
+  }
+
+  footer .logo{
+        transform: translate(0rem, -5%);
   }
 
   .footer-images{
