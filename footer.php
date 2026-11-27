@@ -1,42 +1,5 @@
 <footer>
-
-
-     
-     <!-- <div class="carousel">
-
-        <div class="group">
-          <a href="https://www.frontcommun.org/">
-            <img class="card" src="<= $carousel1; ?>" alt="carousel">
-          </a>
-          <a href="https://fneeq.qc.ca/fr/accueil/">
-            <img class="card" src="<= $carousel2; ?>" alt="carousel">
-          </a>
-          <a href="https://secteurpublic.quebec/">
-            <img class="card" src="<= $carousel3; ?>" alt="carousel">
-          </a>
-          <a href="https://www.nonauxhausses.org/">
-            <img class="card" src="<= $carousel4; ?>" alt="carousel">
-          </a>
-        </div>
-
-        <div aria-hidden class="group">
-          <a href="https://www.frontcommun.org/">
-            <img class="card" src="<= $carousel1; ?>" alt="carousel">
-          </a>
-          <a href="https://fneeq.qc.ca/fr/accueil/">
-            <img class="card" src="<= $carousel2; ?>" alt="carousel">
-          </a>
-          <a href="https://secteurpublic.quebec/">
-            <img class="card" src="<= $carousel3; ?>" alt="carousel">
-          </a>
-          <a href="https://www.nonauxhausses.org/">
-            <img class="card" src="<= $carousel4; ?>" alt="carousel">
-          </a>
-        </div>-->
-
-      
-
-<div class="footer-images">
+ <div class="footer-images">
   
         <div class="carousel">
 
@@ -90,19 +53,6 @@
 
 
       <?php wp_reset_query();   // Restore global post data stomped by the_post(). ?>
-
-           <!-- <php
-              /**
-               * Logo du site (Apparence → Personnaliser → Identité du site).
-               * the_custom_logo() affiche directement le lien vers l'accueil et l'image.
-               * Rien à échapper : le HTML est généré par WordPress.
-               */
-
-              if ( has_custom_logo() ) : ?>
-                  <div class="footer__logo">
-                      <php the_custom_logo(); ?>
-                  </div>
-              <php endif;?> -->
 
 
       <div class="reseauSociaux">

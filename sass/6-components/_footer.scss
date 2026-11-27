@@ -50,12 +50,52 @@ footer .logo{
   margin-right: 1rem;
   min-width: 0;         
   overflow: hidden;
-  width: 60%;
+  width: 55%;
+  mask-image: linear-gradient(to right, transparent, #000 7% 93%, transparent);
+   scroll-behavior: smooth;
+}
+
+.carousel::scroll-button(*){
+    align-self: anchor-center;
+
+}
+
+ .carousel::scroll-button(right), .carousel::scroll-button(left){
+  content: '>';
+  // position: fixed;
+  //   width: 3rem;
+  //   height: 2rem;
+  //   bottom: -79rem;
+  //   right: 57rem;
+   background-color: $primary_color;
+    border: none;
+    border-radius: $btn_shape;
+    box-shadow: $icn_shadow;
+    color: $light_text;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: $font_bold;
+    margin-top: 9px;
+    padding: 8px 15px;
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.carousel::scroll-button(left){
+  content: '<';
+   left: -22px;
 }
 
 .carousel::-webkit-scrollbar{
   display: none;
 }
+
+.carousel:hover .group{
+  // filter: grayscale(.8);
+  animation-play-state: paused;
+}
+
+
+
 
 .copyright{
    background-color: black;
@@ -90,7 +130,7 @@ footer .logo{
 
 .group{
   align-items: center;
-  animation: spin 40s infinite linear;
+  // animation: spin 40s infinite linear;
   display: flex;
   flex-shrink: 0; 
   gap: 1em;
@@ -99,6 +139,7 @@ footer .logo{
   min-width: 100%;
   overflow: visible;
   padding-right: 1em; 
+
 }
 
 .group:nth-child(2){
@@ -116,7 +157,11 @@ footer .logo{
   height: auto;
   margin: 0;       
   white-space: nowrap;
-  
+}
+
+.group a:hover{
+  filter: grayscale(0);
+  transform: scale(1.1);
 }
 
 .group p{
