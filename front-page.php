@@ -148,8 +148,9 @@ endif;
         </div>
 
         <section>
+            <img src="wp-content/themes/underscores-child/sass/6-components/Group 170.png" alt="Prof">
         </section>
-
+        
         <div class="actualités">
             <!-- Titre -->
             <h1><?php echo esc_html($titre_actualites_accueil); ?></h1>
