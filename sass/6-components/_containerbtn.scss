@@ -1,6 +1,9 @@
 @use '../1-settings/variables' as *;
 
 .container {
+    /* Conteneur flex pour pousser en bas le bouton */
+    margin-top: auto;
+
     padding: 0 6px 6px 0;
     text-align: right;
 }

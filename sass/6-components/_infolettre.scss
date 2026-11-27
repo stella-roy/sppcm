@@ -17,17 +17,46 @@
     font-size: $fs_xs;
 }
 
+.container-infolettre {
+    display: flex;
+    flex-flow: wrap;
+}
+
 .infolettre {
+    display: flex;
+    flex-direction: column;
+
     background-color: $primary-color;
     border-radius: $border-sppcm;
     box-shadow: $rnd-shadow;
     color: $light-text;
     margin: 20px;
+    min-width: 100%;
 
     /* technique IA margin-left, pour aligner qqch avec un margin de box-shadow avec tout ce qui est dans un parent */
     margin-left: -0.5rem; /* Ajuste l'alignement pour ne pas couper le contenu avec le parent (section) */
 
     // soustrait 6px en bas et 6px en haut pour le container du btn Lire plus
     padding: 24px 26px 18px 32px;
+}
+
+
+/* Taille tablette du connteneur dans la page infolettre */
+@media screen and (min-width: 768px) {
+
+    .container-infolettre .infolettre {
+        flex: 30vw;
+        max-width: 30vw;
+        min-width: auto;
+    }
+
+}
+
+/* Taille tablette du connteneur dans la page infolettre */
+@media screen and (min-width: 1024px) {
+        .container-infolettre .infolettre {
+        flex: 25vw;
+        max-width: 25vw;
+    }
 }
 
