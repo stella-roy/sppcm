@@ -209,7 +209,6 @@ header .custom-logo {
   a {
     font-size: 8px;
     margin: 0;
-    height: 100%;
   }
 
   header {
@@ -272,7 +271,6 @@ header .custom-logo {
     background: $color_active;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
-    // transform: translate(20%);
   }
 
   header ul .sub-menu a {
@@ -308,8 +306,8 @@ header .custom-logo {
     height: 20%;
     left: 0;
     position: relative;
-    top: 12%;
-    translate: -20vh;
+    top: 50%;
+    translate: -20%;
     z-index: none;
   }
 
@@ -398,13 +396,16 @@ header {
     align-items: center;
     display: flex;
     flex-direction: row;
+    gap: 5%;
     height: 100%;
     margin-left: 3%;
+    width: 40%;
   }
 
   .site-title {
     display: flex;
     margin-bottom: 0;
+    width: 100%;
   }
 
   .site-title a {
@@ -427,7 +428,7 @@ header {
 
 @media (min-width: 1024px) {
   header {
-    height: 50px;
+    height: 100px;
   }
 
   header .navigation a {
@@ -439,5 +440,9 @@ header {
 
   .site-title a {
     font-size: 16px;
+  }
+
+  header ul .sub-menu a {
+    font-size: 16 px;
   }
 }
