@@ -20,16 +20,17 @@
 .container-infolettre {
     display: flex;
     flex-flow: wrap;
+    justify-content: space-between;
 }
 
 .infolettre {
-    display: flex;
-    flex-direction: column;
-
     background-color: $primary-color;
     border-radius: $border-sppcm;
     box-shadow: $rnd-shadow;
     color: $light-text;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 20px;
     min-width: 100%;
 
@@ -46,7 +47,6 @@
 
     .container-infolettre .infolettre {
         flex: 30vw;
-        max-width: 30vw;
         min-width: auto;
     }
 
@@ -54,8 +54,9 @@
 
 /* Taille tablette du connteneur dans la page infolettre */
 @media screen and (min-width: 1024px) {
-        .container-infolettre .infolettre {
-        flex: 25vw;
+
+    .container-infolettre .infolettre {
+        flex: 22vw;
         max-width: 25vw;
     }
 }
