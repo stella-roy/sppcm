@@ -47,6 +47,7 @@ if ($the_query->have_posts()) :
         $texte_description_accueil = $data['texte_description_accueil'];
         $titre_actualites_accueil  = $data['titre_actualites_accueil'];
         $titre_infolettres_accueil = $data['titre_infolettres_accueil'];
+        $image_bande = $data['image_bande'];
 
     endwhile;
     wp_reset_postdata();
@@ -105,6 +106,13 @@ if ($the_query->have_posts()) :
 endif;
 ?>
 
+<!-- LIEN DES PAGES -->
+<?php
+// Récupération dynamique des liens d'archives par leur slug
+$page_infolettres = get_page_by_path('infolettre-accueil');
+$lien_infolettres = $page_infolettres ? get_page_link($page_infolettres->ID) : '#';
+?>
+
 <main id="primary" class="site-main">
 
     <?php if (!empty($url_video_accueil)) : ?>
@@ -146,11 +154,13 @@ endif;
         <div class="description">
             <?php echo wp_kses_post($texte_description_accueil); ?>
         </div>
+    </div>
 
-        <section>
-            <img class="prof-image" src="wp-content/themes/underscores-child/sass/6-components/Group 170.png" alt="Prof">
-        </section>
-        
+    <section>
+        <img class="prof-image" src="<?php echo esc_url($image_bande); ?>" alt="Prof">
+    </section>
+
+    <div class="wrapper">
         <div class="actualités">
             <!-- Titre -->
             <h1><?php echo esc_html($titre_actualites_accueil); ?></h1>
@@ -163,8 +173,6 @@ endif;
                         // Récupérer le lien d'origine Feedzy (avec le permalien en secours)
                         $feedzy_url = get_post_meta(get_the_ID(), 'feedzy_item_url', true);
                         $lien_article = !empty($feedzy_url) ? $feedzy_url : get_permalink();
-
-                        // Récupérer
                         ?>
                         <div class="article">
                             <h2><?php the_title(); ?></h2>
@@ -180,6 +188,11 @@ endif;
                     <?php endwhile; ?>
                     <?php wp_reset_postdata(); ?>
                 <?php endif; ?>
+            </div>
+            <div class="btn-archive-container">
+                <button class="btn-archive">
+                    <a href="" target="_blank">Archive des actualités</a>
+                </button>
             </div>
         </div>
 
@@ -198,6 +211,14 @@ endif;
                         <a href="<?php echo esc_url($lien_infolettre); ?>" target="_blank" rel="noopener noreferrer">Lire plus...</a>
                     </button>
                 </div>
+            </div>
+            <div class="btn-archive-container">
+                <button class="btn-archive">
+                    <a href="<?php echo esc_url($lien_infolettres); ?>" >
+                        Archive des infolettres...
+                    </a>
+                </button>
+
             </div>
         </section>
     </div>

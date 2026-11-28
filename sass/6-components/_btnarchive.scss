@@ -1,0 +1,34 @@
+@use '../1-settings/variables' as *;
+
+.btn-archive-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    overflow: visible;
+}
+
+.btn-archive {
+	background-color: transparent;
+	border-radius: $btn_shape;
+	border: 3.5px solid $primary_color;
+	display: inline-block;
+	cursor: pointer;
+	font-family: $font;
+
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-archive-container .btn-archive:hover{
+     border: 3.5px solid $primary_color;
+     transform: scale(1.04);
+ }
+
+.btn-archive-container .btn-archive a{
+    color: $dark_text;
+    text-align: center;
+    font-family: $font;
+    font-size:$fs_md;
+    font-weight: $font_bold;
+}
+
